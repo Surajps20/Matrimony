@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Matches | Kalyana Varan</title>
+    <meta
+      name="description"
+      content="AI recommended compatible matches on Kalyana Varan Matrimony."
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./src/images/kalyana-varan-logo.svg"
+      type="image/svg+xml"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <link rel="stylesheet" href="./css/ai-matches.css" />
+  </head>
+
+  <body data-page="ai-matches">
+    <section class="dashboard-container">
+      <!-- Sidebar Navigation -->
+      <div id="user-sidebar" data-active="ai-matches"></div>
+
+      <!-- Main Portal Content -->
+      <main class="dashboard-main">
+        <!-- Hero Section -->
+        <section class="ai-hero">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <span class="ai-badge"> 🤖 AI MATCH ENGINE </span>
+              <h1>Your Perfect Match is Waiting</h1>
+              <p>
+                Our Artificial Intelligence has analysed your profile,
+                lifestyle, education, career, family values and partner
+                preferences to recommend the most compatible life partner.
+              </p>
+              <div class="hero-buttons">
+                <button class="primary-btn">
+                  <i class="fas fa-robot me-2"></i> Start AI Analysis
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="ai-animation">
+                <div class="brain">
+                  <i class="fas fa-brain"></i>
+                </div>
+                <div class="pulse pulse1"></div>
+                <div class="pulse pulse2"></div>
+                <div class="pulse pulse3"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- AI Analysis Stats Section -->
+        <section class="analysis-section">
+          <div class="analysis-card">
+            <div class="analysis-header">
+              <div>
+                <h2>AI Compatibility Analysis</h2>
+                <p>Analysing your profile with Artificial Intelligence</p>
+              </div>
+              <span class="online"> 🟢 AI ONLINE </span>
+            </div>
+
+            <div class="progress mt-4">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                style="width: 96%"
+              >
+                96%
+              </div>
+            </div>
+
+            <div class="analysis-grid mt-5">
+              <div class="analysis-item">
+                <i class="fas fa-user"></i>
+                <h5>Profile Completed</h5>
+                <p>100%</p>
+              </div>
+              <div class="analysis-item">
+                <i class="fas fa-heart"></i>
+                <h5>Compatibility</h5>
+                <p>96%</p>
+              </div>
+              <div class="analysis-item">
+                <i class="fas fa-users"></i>
+                <h5>Profiles Scanned</h5>
+                <p>12,486</p>
+              </div>
+              <div class="analysis-item">
+                <i class="fas fa-star"></i>
+                <h5>AI Confidence</h5>
+                <p>Excellent</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- AI Loading Screen Section -->
+        <section id="aiLoadingSection" class="ai-loading-section">
+          <div class="loading-card">
+            <div class="loading-robot">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h2>AI Match Engine</h2>
+            <p id="loadingText">Initializing Artificial Intelligence...</p>
+            <div class="loading-progress">
+              <div id="loadingBar"></div>
+            </div>
+            <h3 id="loadingPercent">0%</h3>
+          </div>
+        </section>
+
+        <!-- Best AI Match Result Section -->
+        <section class="best-match-section">
+          <div class="section-title text-center mb-5">
+            <span class="ai-title-badge"> ❤️ BEST AI MATCH </span>
+            <h2>We Found Your Most Compatible Partner</h2>
+            <p>Based on Artificial Intelligence compatibility analysis.</p>
+          </div>
+
+          <div class="best-match-card">
+            <div class="row align-items-center">
+              <!-- Left: Photo -->
+              <div class="col-lg-4">
+                <div class="match-image">
+                  <img src="./src/images/girl4.png" alt="Best Match" />
+                  <span class="match-score"> 96% </span>
+                </div>
+              </div>
+
+              <!-- Center: Details -->
+              <div class="col-lg-5">
+                <div class="match-content">
+                  <h2>
+                    Priya R
+                    <i class="fas fa-circle-check verified"></i>
+                  </h2>
+                  <p class="match-location">
+                    <i class="fas fa-location-dot"></i> Madurai, Tamil Nadu
+                  </p>
+                  <div class="match-details">
+                    <span> 24 Years </span>
+                    <span> 5'4" </span>
+                    <span> BE Computer Science </span>
+                    <span> Software Engineer </span>
+                  </div>
+                  <div class="compatibility">
+                    <div>❤️ Family Values</div>
+                    <div>✔ Excellent</div>
+                  </div>
+                  <div class="compatibility">
+                    <div>🎓 Education</div>
+                    <div>✔ 100%</div>
+                  </div>
+                  <div class="compatibility">
+                    <div>💼 Career</div>
+                    <div>✔ 94%</div>
+                  </div>
+                  <div class="compatibility">
+                    <div>🏡 Lifestyle</div>
+                    <div>✔ 96%</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: Score Card -->
+              <div class="col-lg-3">
+                <div class="ai-score-card">
+                  <h5>AI Compatibility</h5>
+                  <div class="circle-score">96%</div>
+                  <p>Excellent Match</p>
+                  <button class="primary-btn w-100 mb-3 view-profile">
+                    <i class="fas fa-user me-2"></i> View Profile
+                  </button>
+                  <button class="outline-btn w-100 send-interest">
+                    <i class="fas fa-heart me-2"></i> Send Interest
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- AI Compatibility Report Card -->
+        <section class="ai-report-section">
+          <div class="section-title text-center mb-5">
+            <span class="ai-title-badge"> 🧠 AI ANALYSIS </span>
+            <h2>Why Our AI Selected This Match</h2>
+            <p>
+              Our AI compared your profile with thousands of profiles and found
+              this match based on multiple compatibility factors.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="report-card">
+                <div class="report-item">
+                  <div class="report-icon">❤️</div>
+                  <div>
+                    <h5>Family Values</h5>
+                    <p>
+                      Both profiles have very similar family values, traditions
+                      and long-term relationship expectations.
+                    </p>
+                  </div>
+                  <span class="score"> 98% </span>
+                </div>
+                <div class="report-item">
+                  <div class="report-icon">🎓</div>
+                  <div>
+                    <h5>Education Compatibility</h5>
+                    <p>
+                      Similar education background and career growth increase
+                      long-term compatibility.
+                    </p>
+                  </div>
+                  <span class="score"> 100% </span>
+                </div>
+                <div class="report-item">
+                  <div class="report-icon">💼</div>
+                  <div>
+                    <h5>Career & Lifestyle</h5>
+                    <p>
+                      Both have stable careers and matching lifestyle
+                      preferences.
+                    </p>
+                  </div>
+                  <span class="score"> 94% </span>
+                </div>
+                <div class="report-item">
+                  <div class="report-icon">📍</div>
+                  <div>
+                    <h5>Location Preference</h5>
+                    <p>
+                      Preferred city and relocation preferences are highly
+                      compatible.
+                    </p>
+                  </div>
+                  <span class="score"> 92% </span>
+                </div>
+                <div class="report-item">
+                  <div class="report-icon">🌟</div>
+                  <div>
+                    <h5>Personality Match</h5>
+                    <p>
+                      AI predicts excellent communication and emotional
+                      compatibility.
+                    </p>
+                  </div>
+                  <span class="score"> 97% </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="summary-card">
+                <h4>Overall AI Result</h4>
+                <div class="summary-score">96%</div>
+                <h5>Excellent Compatibility</h5>
+                <p>
+                  Based on your profile, our AI predicts a strong possibility of
+                  a successful and long-lasting relationship.
+                </p>
+                <hr />
+                <ul class="summary-list">
+                  <li>✔ Similar Education</li>
+                  <li>✔ Matching Family Values</li>
+                  <li>✔ Career Compatibility</li>
+                  <li>✔ Preferred Age Match</li>
+                  <li>✔ Preferred Location</li>
+                </ul>
+                <button class="primary-btn w-100 send-interest">
+                  ❤️ Send Interest
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- More AI Recommendations -->
+        <section class="recommended-section">
+          <div class="section-title text-center mb-5">
+            <span class="ai-title-badge"> 🤖 MORE AI MATCHES </span>
+            <h2>More AI Recommended Profiles</h2>
+            <p>
+              Here are more highly compatible profiles selected by our AI based
+              on your preferences and compatibility score.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Match 1 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="ai-match-card">
+                <span class="match-percent"> 94% </span>
+                <img src="./src/images/girl1.jpg" alt="Profile" />
+                <h3>Divya K</h3>
+                <p>23 Years • 5'4"</p>
+                <p>B.Tech IT</p>
+                <p>QA Engineer</p>
+                <p>Coimbatore</p>
+                <div class="match-actions">
+                  <button class="primary-btn view-profile">View Profile</button>
+                  <button class="outline-btn send-interest">❤️ Interest</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Match 2 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="ai-match-card">
+                <span class="match-percent"> 92% </span>
+                <img src="./src/images/girl2.png" alt="Profile" />
+                <h3>Keerthana S</h3>
+                <p>25 Years • 5'5"</p>
+                <p>MCA</p>
+                <p>Software Developer</p>
+                <p>Chennai</p>
+                <div class="match-actions">
+                  <button class="primary-btn view-profile">View Profile</button>
+                  <button class="outline-btn send-interest">❤️ Interest</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Match 3 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="ai-match-card">
+                <span class="match-percent"> 91% </span>
+                <img src="./src/images/girl4.png" alt="Profile" />
+                <h3>Priyadharshini</h3>
+                <p>24 Years • 5'3"</p>
+                <p>BE Computer Science</p>
+                <p>Software Engineer</p>
+                <p>Madurai</p>
+                <div class="match-actions">
+                  <button class="primary-btn view-profile">View Profile</button>
+                  <button class="outline-btn send-interest">❤️ Interest</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Match 4 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="ai-match-card">
+                <span class="match-percent"> 90% </span>
+                <img src="./src/images/girl5.jpg" alt="Profile" />
+                <h3>Nivetha</h3>
+                <p>24 Years • 5'5"</p>
+                <p>MBA</p>
+                <p>HR Executive</p>
+                <p>Trichy</p>
+                <div class="match-actions">
+                  <button class="primary-btn view-profile">View Profile</button>
+                  <button class="outline-btn send-interest">❤️ Interest</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Match 5 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="ai-match-card">
+                <span class="match-percent"> 89% </span>
+                <img src="./src/images/girl6.jpg" alt="Profile" />
+                <h3>Aishwarya</h3>
+                <p>23 Years • 5'2"</p>
+                <p>M.Sc</p>
+                <p>Lecturer</p>
+                <p>Salem</p>
+                <div class="match-actions">
+                  <button class="primary-btn view-profile">View Profile</button>
+                  <button class="outline-btn send-interest">❤️ Interest</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Match 6 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="ai-match-card">
+                <span class="match-percent"> 88% </span>
+                <img src="./src/images/girl3.jpg" alt="Profile" />
+                <h3>Harini</h3>
+                <p>25 Years • 5'6"</p>
+                <p>B.Com</p>
+                <p>Accountant</p>
+                <p>Erode</p>
+                <div class="match-actions">
+                  <button class="primary-btn view-profile">View Profile</button>
+                  <button class="outline-btn send-interest">❤️ Interest</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
+
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core Layout Engines -->
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/user-layout.js"></script>
+
+    <!-- AI Matches Execution Script -->
+    <script src="js/ai-matches.js"></script>
+  </body>
+</html>

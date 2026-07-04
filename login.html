@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalyana Varan Matrimony - Premium Indian Matrimony Services</title>
+    <meta
+      name="description"
+      content="Kalyana Varan Matrimony is the most trusted and premium South Indian matchmaking service. Find your perfect life partner from our verified database of brides and grooms."
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./src/images/kalyana-varan-logo.svg"
+      type="image/svg+xml"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/auth.css" />
+    <link rel="stylesheet" href="./css/toast.css" />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="./src/images/kalyana-varan-logo.svg" alt="Kalyana Varan" />
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="profiles.html">Profiles</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+
+            <!-- Divider -->
+            <li class="nav-item d-none d-lg-block">
+              <span class="mx-3 text-muted">|</span>
+            </li>
+
+            <!-- Login -->
+            <li class="nav-item">
+              <a href="login.html" class="custom-btn gold-btn"> Login </a>
+            </li>
+
+            <!-- Register -->
+            <li class="nav-item">
+              <a href="register.html" class="custom-btn mt-2 mt-lg-0">
+                Register
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===================== LOGIN SECTION START ===================== -->
+    <section class="login-section py-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <!-- Left Side -->
+          <div class="col-lg-6 d-none d-lg-block">
+            <div class="login-info pe-lg-5" data-aos="fade-right">
+              <span class="login-badge">
+                ❤️ Find Your Perfect Life Partner
+              </span>
+
+              <h1 class="login-title mt-4">
+                Welcome Back to
+                <span>Kalyana Varan</span>
+              </h1>
+
+              <p class="login-description mt-3">
+                Login to continue your matrimonial journey. Browse verified
+                profiles, connect with compatible matches, and take the next
+                step toward finding your soulmate.
+              </p>
+
+              <div class="login-features mt-5">
+                <div class="feature-item">
+                  <i class="fas fa-user-check"></i>
+                  <div>
+                    <h6>Verified Profiles</h6>
+                    <p>100% genuine and verified members.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fas fa-heart"></i>
+                  <div>
+                    <h6>Perfect Matches</h6>
+                    <p>Advanced matching based on your preferences.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fas fa-shield-alt"></i>
+                  <div>
+                    <h6>Safe & Secure</h6>
+                    <p>Your personal information is fully protected.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side -->
+          <div class="col-lg-5 col-md-8">
+            <div class="login-card shadow-lg" data-aos="zoom-in">
+              <div class="text-center mb-4">
+                <div class="login-icon">
+                  <i class="fas fa-user-circle"></i>
+                </div>
+
+                <h2 class="mt-3">Login</h2>
+
+                <p>Access your matrimonial account</p>
+              </div>
+
+              <form action="#" method="POST" id="loginForm">
+                <!-- Email -->
+                <div class="mb-3">
+                  <label class="form-label"> Email Address </label>
+
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="loginEmail"
+                      name="email"
+                      placeholder="Enter your email"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <!-- Password -->
+                <div class="mb-3">
+                  <label class="form-label"> Password </label>
+
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <i class="fas fa-lock"></i>
+                    </span>
+
+                    <input
+                      type="password"
+                      id="password"
+                      class="form-control"
+                      placeholder="Enter your password"
+                      required
+                    />
+
+                    <button
+                      class="btn password-toggle"
+                      type="button"
+                      id="togglePassword"
+                    >
+                      <i class="fas fa-eye"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Remember -->
+                <div
+                  class="d-flex justify-content-between align-items-center mb-4"
+                >
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="remember"
+                    />
+
+                    <label class="form-check-label" for="remember">
+                      Remember Me
+                    </label>
+                  </div>
+
+                  <a href="#" class="forgot-link"> Forgot Password? </a>
+                </div>
+
+                <!-- Button -->
+                <button type="submit" class="btn login-btn w-100">Login</button>
+              </form>
+
+              <!-- Divider -->
+              <div class="divider my-4">
+                <span>OR</span>
+              </div>
+
+              <!-- Register -->
+              <div class="text-center">
+                <p class="mb-0">
+                  Don't have an account?
+
+                  <a href="register.html" class="register-link">
+                    Register Now
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== LOGIN SECTION END ===================== -->
+
+    <!-- Footer -->
+    <footer class="footer bg-purple text-white pt-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Company Info -->
+          <div class="col-lg-4 mb-4">
+            <h5 class="font-heading fw-bold mb-3 text-white">
+              Kalyana Varan Matrimony
+            </h5>
+            <p class="small text-light-pink mb-4">
+              Helping you discover pure relationships and blessed alliances
+              under the sacred institution of traditional Indian marriages.
+            </p>
+            <div class="contact-details small text-light-pink">
+              <p class="mb-2">
+                <i class="bi bi-telephone-fill me-2 text-white"></i> +91 98765
+                43210
+              </p>
+              <p class="mb-2">
+                <i class="bi bi-envelope-fill me-2 text-white"></i>
+                support@kalyanavaran.com
+              </p>
+              <p class="mb-0">
+                <i class="bi bi-geo-alt-fill me-2 text-white"></i> 2nd Floor,
+                Royal Arcade, Anna Nagar, Chennai – 600040, India
+              </p>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-6 col-md-3 col-lg-2 mb-4">
+            <h6 class="font-heading fw-bold mb-3 text-white">Company</h6>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2"><a href="index.html">Home</a></li>
+              <li class="mb-2"><a href="./profiles.html">Profile</a></li>
+              <li class="mb-2"><a href="./about.html">About Us</a></li>
+              <li class="mb-0"><a href="./contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Explore Links -->
+          <div class="col-6 col-md-3 col-lg-2 mb-4">
+            <h6 class="font-heading fw-bold mb-3 text-white">Explore</h6>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2"><a href="./profiles.html">Browse Matches</a></li>
+              <li class="mb-2"><a href="./about.html">Success Stories</a></li>
+              <li class="mb-2"><a href="#membership">Membership Plans</a></li>
+              <li class="mb-0"><a href="#termsModal">Terms & Conditions</a></li>
+            </ul>
+          </div>
+
+          <!-- Search by Profile ID & Socials -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <h6 class="font-heading fw-bold mb-3 text-white">
+              Search by Profile ID
+            </h6>
+            <form class="d-flex mb-4" action="./profiles.html" method="get">
+              <input
+                type="text"
+                class="form-control me-2 rounded-pill bg-gold text-black border-0 px-3"
+                placeholder="Enter Profile ID"
+                required
+              />
+              <button class="btn gold-btn rounded-pill px-4" type="submit">
+                Search
+              </button>
+            </form>
+
+            <h6 class="font-heading fw-bold mb-2 text-white">
+              Follow Our Stories
+            </h6>
+            <div class="footer-social">
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa fa-facebook-square"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-whatsapp-square"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="footer-bottom bg-light text-dark py-3 mt-4">
+        <div class="container footer-bottom-content">
+          <div class="footer-logo-section">
+            <img
+              src="./src/images/kalyana-varan-logo.svg"
+              alt="Kalyana Varan Logo"
+              class="footer-logo"
+            />
+
+            <p class="mb-0 small text-muted">
+              © 2026 Kalyana Varan Matrimony. All rights reserved.
+            </p>
+          </div>
+
+          <div class="footer-policy">
+            <a href="#termsModal" class="text-dark small text-decoration-none">
+              Terms & Conditions | Privacy Policy
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/login.js"></script>
+  </body>
+</html>

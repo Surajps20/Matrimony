@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile | Kalyana Varan</title>
+    <meta name="description" content="Update your matrimony profile details on Kalyana Varan.">
+
+    <link rel="shortcut icon" href="./src/images/kalyana-varan-logo.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/edit-profile.css">
+    <link rel="stylesheet" href="css/toast.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body data-page="my-profile">
+
+    <section class="dashboard-container">
+        <div id="user-sidebar" data-active="my-profile"></div>
+
+        <main class="dashboard-main">
+            <section class="page-hero compact">
+                <div>
+                    <span class="page-tag">Profile</span>
+                    <h1>Edit Profile</h1>
+                    <p>Update your details to improve match recommendations.</p>
+                </div>
+                <a href="my-profile.html" class="outline-btn-light"><i class="fas fa-eye me-2"></i>View Profile</a>
+            </section>
+
+            <form id="editProfileForm" action="php/update-profile.php" method="POST" class="edit-form">
+                <nav class="edit-nav">
+                    <a href="#personal" class="active">Personal</a>
+                    <a href="#religion">Religion &amp; Horoscope</a>
+                    <a href="#career">Education &amp; Career</a>
+                    <a href="#family">Family</a>
+                    <a href="#partner" id="partner">Partner Preference</a>
+                </nav>
+
+                <section class="edit-section" id="personal">
+                    <h3><i class="fas fa-user"></i> Personal Information</h3>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" name="full_name" value="Suraj P S">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Date of Birth</label>
+                            <input type="date" class="form-control" name="dob" value="2001-06-10">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Height</label>
+                            <select class="form-select" name="height">
+                                <option>5'6"</option>
+                                <option selected>5'9"</option>
+                                <option>6'0"</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Marital Status</label>
+                            <select class="form-select" name="marital_status">
+                                <option selected>Never Married</option>
+                                <option>Widowed</option>
+                                <option>Divorced</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Mother Tongue</label>
+                            <select class="form-select" name="mother_tongue">
+                                <option selected>Tamil</option>
+                                <option>English</option>
+                                <option>Telugu</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">City</label>
+                            <input type="text" class="form-control" name="city" value="Madurai">
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">About Me</label>
+                            <textarea class="form-control" name="about" rows="4">Software professional with strong family values, looking for a compatible life partner.</textarea>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="edit-section" id="religion">
+                    <h3><i class="fas fa-om"></i> Religion &amp; Horoscope</h3>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Religion</label>
+                            <select class="form-select" name="religion">
+                                <option selected>Hindu</option>
+                                <option>Christian</option>
+                                <option>Muslim</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Caste / Community</label>
+                            <input type="text" class="form-control" name="caste" value="Naidu">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Star (Nakshatra)</label>
+                            <select class="form-select" name="star">
+                                <option>Ashwini</option>
+                                <option selected>Rohini</option>
+                                <option>Karthigai</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Raasi</label>
+                            <select class="form-select" name="raasi">
+                                <option selected>Rishabam</option>
+                                <option>Mesham</option>
+                                <option>Mithunam</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Dosham</label>
+                            <select class="form-select" name="dosham">
+                                <option selected>No</option>
+                                <option>Yes</option>
+                                <option>Don't Know</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Place of Birth</label>
+                            <input type="text" class="form-control" name="birth_place" value="Madurai">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="edit-section" id="career">
+                    <h3><i class="fas fa-graduation-cap"></i> Education &amp; Career</h3>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Education</label>
+                            <input type="text" class="form-control" name="education" value="B.E Computer Science">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Occupation</label>
+                            <input type="text" class="form-control" name="occupation" value="QA Engineer">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Employed In</label>
+                            <select class="form-select" name="employed_in">
+                                <option selected>Private</option>
+                                <option>Government</option>
+                                <option>Business</option>
+                                <option>Self Employed</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Annual Income</label>
+                            <select class="form-select" name="income">
+                                <option>2-5 Lakhs</option>
+                                <option selected>5-10 Lakhs</option>
+                                <option>10-20 Lakhs</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="edit-section" id="family">
+                    <h3><i class="fas fa-users"></i> Family Details</h3>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Father's Occupation</label>
+                            <input type="text" class="form-control" name="father_occupation" value="Private Employee">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Mother's Occupation</label>
+                            <input type="text" class="form-control" name="mother_occupation" value="Homemaker">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Family Type</label>
+                            <select class="form-select" name="family_type">
+                                <option selected>Nuclear Family</option>
+                                <option>Joint Family</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Family Status</label>
+                            <select class="form-select" name="family_status">
+                                <option selected>Middle Class</option>
+                                <option>Upper Middle Class</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">About Family</label>
+                            <textarea class="form-control" name="about_family" rows="3">Traditional family from Madurai with moderate values.</textarea>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="edit-section" id="partner">
+                    <h3><i class="fas fa-heart"></i> Partner Preference</h3>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Preferred Age</label>
+                            <input type="text" class="form-control" name="pref_age" value="22 - 28">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Preferred Height</label>
+                            <input type="text" class="form-control" name="pref_height" value="5'2\" - 5'6\"">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Preferred Education</label>
+                            <input type="text" class="form-control" name="pref_education" value="Any Graduate">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Preferred Location</label>
+                            <input type="text" class="form-control" name="pref_location" value="Tamil Nadu">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Preferred Caste</label>
+                            <input type="text" class="form-control" name="pref_caste" value="Same community">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Preferred Star</label>
+                            <input type="text" class="form-control" name="pref_star" value="Any compatible star">
+                        </div>
+                    </div>
+                </section>
+
+                <div class="form-actions">
+                    <a href="dashboard.html" class="btn btn-secondary">Cancel</a>
+                    <button type="submit" class="btn custom-btn">Save Profile</button>
+                </div>
+            </form>
+        </main>
+    </section>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/user-layout.js"></script>
+    <script src="js/edit-profile.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile | Kalyana Varan</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/my-profile.css" />
+    <link rel="stylesheet" href="css/toast.css" />
+  </head>
+
+  <body data-page="my-profile">
+
+    <section class="dashboard-container">
+      <div id="user-sidebar" data-active="my-profile"></div>
+
+      <main class="dashboard-main user-page-content">
+
+    <section class="profile-banner">
+      <div class="container">
+        <!-- Breadcrumb & Back -->
+        <div class="profile-navigation mb-4">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-2">
+              <li class="breadcrumb-item">
+                <a href="dashboard.html">Dashboard</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                My Profile
+              </li>
+            </ol>
+          </nav>
+
+          <a href="dashboard.html" class="back-dashboard">
+            <i class="fas fa-arrow-left"></i>
+            Back to Dashboard
+          </a>
+        </div>
+        <div class="profile-header">
+          <div class="row align-items-center">
+            <!-- Left -->
+
+            <div class="col-lg-3 text-center">
+              <div class="profile-photo">
+                <img src="./src/images/boy3.png" alt="Profile" />
+
+                <button class="upload-btn">
+                  <i class="fas fa-camera"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right -->
+
+            <div class="col-lg-9">
+              <h2>Suraj P S</h2>
+
+              <p class="profile-id">
+                Profile ID :
+                <strong>KV100245</strong>
+              </p>
+
+              <span class="member-badge"> Premium Member </span>
+
+              <div class="mt-4">
+                <div class="d-flex justify-content-between">
+                  <span>Profile Completion</span>
+
+                  <strong>75%</strong>
+                </div>
+
+                <div class="progress mt-2">
+                  <div class="progress-bar" style="width: 75%"></div>
+                </div>
+              </div>
+
+              <div class="mt-4">
+                <a href="edit-profile.html" class="btn-edit">
+                  <i class="fas fa-pen"></i> Edit Profile
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal Details -->
+
+    <section class="py-5">
+      <div class="container">
+        <div class="info-card">
+          <div class="card-header-custom">
+            <h4>
+              <i class="fas fa-user"></i>
+
+              Personal Information
+            </h4>
+
+            <a href="edit-profile.html" class="btn-edit">Edit</a>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="detail-item">
+                <label>Full Name</label>
+
+                <p>Suraj P S</p>
+              </div>
+
+              <div class="detail-item">
+                <label>Age</label>
+
+                <p>24 Years</p>
+              </div>
+
+              <div class="detail-item">
+                <label>Date of Birth</label>
+
+                <p>10 June 2001</p>
+              </div>
+
+              <div class="detail-item">
+                <label>Height</label>
+
+                <p>5'9"</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="detail-item">
+                <label>Religion</label>
+
+                <p>Hindu</p>
+              </div>
+
+              <div class="detail-item">
+                <label>Community</label>
+
+                <p>Naidu</p>
+              </div>
+
+              <div class="detail-item">
+                <label>Mother Tongue</label>
+
+                <p>Tamil</p>
+              </div>
+
+              <div class="detail-item">
+                <label>Location</label>
+
+                <p>Madurai</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-4">
+      <div class="container">
+        <div class="info-card">
+          <div class="card-header-custom">
+            <h4>
+              <i class="fas fa-graduation-cap"></i>
+              Education & Career
+            </h4>
+
+            <a href="edit-profile.html" class="btn-edit">Edit</a>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="detail-item">
+                <label>Highest Qualification</label>
+                <p>B.E Computer Science</p>
+              </div>
+
+              <div class="detail-item">
+                <label>College</label>
+                <p>KLN College of Engineering</p>
+              </div>
+
+              <div class="detail-item">
+                <label>Occupation</label>
+                <p>QA Engineer</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="detail-item">
+                <label>Company</label>
+                <p>Tech Company</p>
+              </div>
+
+              <div class="detail-item">
+                <label>Annual Income</label>
+                <p>₹6 LPA</p>
+              </div>
+
+              <div class="detail-item">
+                <label>Experience</label>
+                <p>Fresher</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-4">
+      <div class="container">
+        <div class="info-card">
+          <div class="card-header-custom">
+            <h4>
+              <i class="fas fa-users"></i>
+
+              Family Details
+            </h4>
+
+            <a href="edit-profile.html" class="btn-edit">Edit</a>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="detail-item">
+                <label>Father's Occupation</label>
+
+                <p>Private Employee</p>
+              </div>
+
+              <div class="detail-item">
+                <label>Mother's Occupation</label>
+
+                <p>Homemaker</p>
+              </div>
+
+              <div class="detail-item">
+                <label>Family Type</label>
+
+                <p>Nuclear Family</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="detail-item">
+                <label>Family Status</label>
+
+                <p>Middle Class</p>
+              </div>
+
+              <div class="detail-item">
+                <label>Siblings</label>
+
+                <p>1 Younger Sister</p>
+              </div>
+
+              <div class="detail-item">
+                <label>Native Place</label>
+
+                <p>Madurai</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-4">
+      <div class="container">
+        <div class="info-card">
+          <div class="card-header-custom">
+            <h4>
+              <i class="fas fa-heart"></i>
+
+              Partner Preference
+            </h4>
+
+            <a href="edit-profile.html" class="btn-edit">Edit</a>
+          </div>
+
+          <div class="preference-grid">
+            <div class="pref-box">
+              <label>Age</label>
+
+              <p>21 - 26 Years</p>
+            </div>
+
+            <div class="pref-box">
+              <label>Height</label>
+
+              <p>5'2" - 5'8"</p>
+            </div>
+
+            <div class="pref-box">
+              <label>Religion</label>
+
+              <p>Hindu</p>
+            </div>
+
+            <div class="pref-box">
+              <label>Education</label>
+
+              <p>Graduate</p>
+            </div>
+
+            <div class="pref-box">
+              <label>Occupation</label>
+
+              <p>Any</p>
+            </div>
+
+            <div class="pref-box">
+              <label>Location</label>
+
+              <p>Tamil Nadu</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-4 pb-5">
+      <div class="container">
+        <div class="info-card">
+          <div class="card-header-custom">
+            <h4>
+              <i class="fas fa-address-card"></i>
+
+              Contact Information
+            </h4>
+
+            <a href="edit-profile.html" class="btn-edit">Edit</a>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="detail-item" >
+                <label>Email</label>
+
+                <p>suraj@example.com</p>
+              </div>
+
+              <div class="detail-item">
+                <label>Phone</label>
+
+                <p>+91 XXXXX XXXXX</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="detail-item">
+                <label>Address</label>
+
+                <p>Madurai, Tamil Nadu</p>
+              </div>
+
+              <div class="detail-item">
+                <label>Profile Visibility</label>
+
+                <p>Visible to Members</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= MY PHOTOS ================= -->
+
+    <section class="py-4">
+      <div class="container">
+        <div class="info-card">
+          <div class="card-header-custom">
+            <h4>
+              <i class="fas fa-images"></i>
+
+              My Photos
+            </h4>
+
+            <a href="photos.html" class="btn-edit">
+              <i class="fas fa-upload"></i>
+
+              Upload
+            </a>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="photo-card">
+                <img src="./src/images/profile1.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="photo-card">
+                <img src="./src/images/profile2.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="photo-card">
+                <img src="./src/images/profile3.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="upload-photo-card">
+                <i class="fas fa-plus-circle"></i>
+
+                <p>Add New Photo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-4">
+      <div class="container">
+        <div class="info-card">
+          <div class="card-header-custom">
+            <h4>
+              <i class="fas fa-user-shield"></i>
+
+              Privacy Settings
+            </h4>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" checked />
+
+                <label class="form-check-label"> Show Contact Number </label>
+              </div>
+
+              <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" checked />
+
+                <label class="form-check-label"> Show Email Address </label>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" />
+
+                <label class="form-check-label"> Hide Profile </label>
+              </div>
+
+              <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" checked />
+
+                <label class="form-check-label"> Receive Notifications </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-4">
+      <div class="container">
+        <div class="membership-card">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <h3>Premium Membership</h3>
+
+              <p>
+                Your membership is active until
+
+                <strong> 30 December 2026 </strong>
+              </p>
+            </div>
+
+            <div class="mt-4">
+              <button class="btn-renew-membership">
+                <i class="fas fa-pen"></i> Renew Membership
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-4 pb-5">
+      <div class="container">
+        <div class="info-card">
+          <div class="card-header-custom">
+            <h4>
+              <i class="fas fa-cog"></i>
+
+              Account Settings
+            </h4>
+          </div>
+
+          <div class="settings-grid">
+            <button class="setting-btn">
+              <i class="fas fa-key"></i>
+
+              Change Password
+            </button>
+
+            <button class="setting-btn">
+              <i class="fas fa-envelope"></i>
+
+              Change Email
+            </button>
+
+            <button class="setting-btn">
+              <i class="fas fa-mobile-alt"></i>
+
+              Change Mobile
+            </button>
+
+            <button class="setting-btn text-danger">
+              <i class="fas fa-trash"></i>
+
+              Delete Account
+            </button>
+
+            <button class="setting-btn">
+              <i class="fas fa-sign-out-alt"></i>
+
+              Logout
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      </main>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/user-layout.js"></script>
+    <script src="js/my-profile.js"></script>
+  </body>
+</html>

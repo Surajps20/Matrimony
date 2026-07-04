@@ -1,0 +1,529 @@
+body {
+
+    background: #fafafa;
+
+}
+
+/* Breadcrumb */
+
+.breadcrumb-section {
+
+    margin-top: 78px;
+
+    background: #f8f4f5;
+
+    padding: 18px 0;
+
+}
+
+.breadcrumb-item a {
+
+    color: var(--primary-color);
+
+    text-decoration: none;
+
+}
+
+/* Hero */
+
+.profile-hero {
+
+    padding: 60px 0;
+
+}
+
+.profile-image {
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.profile-image img {
+
+    width: 100%;
+
+    height: 520px;
+
+    object-fit: cover;
+
+}
+
+.premium-badge {
+
+    position: absolute;
+
+    top: 20px;
+
+    left: 20px;
+
+    background: linear-gradient(135deg,#D4AF37,#B8860B);
+
+    color: white;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+.profile-summary h2 {
+
+    color: var(--primary-color);
+
+    font-size: 40px;
+
+    font-weight: 700;
+
+}
+
+.profile-id {
+
+    color: #666;
+
+}
+
+.profile-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+}
+
+.profile-tags span {
+
+    background: white;
+
+    border: 1px solid rgba(125,25,53,.12);
+
+    border-radius: 30px;
+
+    padding: 10px 18px;
+
+    font-size: 14px;
+
+}
+
+.action-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 35px;
+
+}
+
+.btn-interest {
+
+    background: linear-gradient(135deg,var(--primary-color),var(--secondary-color));
+
+    color: white;
+
+    border: none;
+
+    border-radius: 30px;
+
+    padding: 12px 28px;
+
+    font-weight: 600;
+
+}
+
+.btn-outline-custom {
+
+    background: white;
+
+    border: 1px solid var(--primary-color);
+
+    color: var(--primary-color);
+
+    border-radius: 30px;
+
+    padding: 12px 28px;
+
+    font-weight: 600;
+
+}
+
+.btn-outline-custom:hover {
+
+    background: var(--primary-color);
+
+    color: white;
+
+}
+
+/* Info Card */
+
+.info-section {
+
+    padding-bottom: 60px;
+
+}
+
+.info-card {
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 35px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.05);
+
+}
+
+.info-card h3 {
+
+    color: var(--primary-color);
+
+    margin-bottom: 20px;
+
+}
+
+@media(max-width:992px){
+
+.profile-image img{
+
+height:420px;
+
+}
+
+.profile-summary{
+
+margin-top:20px;
+
+}
+
+.profile-summary h2{
+
+font-size:32px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.profile-tags{
+
+gap:8px;
+
+}
+
+.profile-tags span{
+
+font-size:13px;
+
+padding:8px 14px;
+
+}
+
+.action-buttons{
+
+flex-direction:column;
+
+}
+
+.btn-interest,
+
+.btn-outline-custom{
+
+width:100%;
+
+}
+
+}
+.profile-info{
+
+padding-top:20px;
+
+}
+
+.info-card{
+
+background:#fff;
+
+padding:30px;
+
+border-radius:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+height:100%;
+
+}
+
+.info-card h4{
+
+color:var(--primary-color);
+
+margin-bottom:25px;
+
+font-weight:700;
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+}
+
+.text-accent{
+
+color:var(--gold-color);
+
+}
+
+.profile-table th{
+
+width:45%;
+
+color:#555;
+
+font-weight:600;
+
+padding:12px 0;
+
+}
+
+.profile-table td{
+
+color:#222;
+
+padding:12px 0;
+
+}
+
+.profile-table tr{
+
+border-bottom:1px solid #f2f2f2;
+
+}
+
+.profile-table tr:last-child{
+
+border-bottom:none;
+
+}
+.preference-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:15px;
+
+margin-top:20px;
+
+}
+
+.preference-grid span{
+
+background:#faf7f5;
+
+padding:15px;
+
+border-radius:12px;
+
+border:1px solid rgba(125,25,53,.08);
+
+font-weight:500;
+
+}
+.gallery-image{
+
+width:100%;
+
+height:250px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+transition:.35s;
+
+cursor:pointer;
+
+}
+
+.gallery-image:hover{
+
+transform:scale(1.04);
+
+}
+.profile-mini-card{
+
+background:#fff;
+
+border-radius:18px;
+
+overflow:hidden;
+
+box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+transition:.35s;
+
+}
+
+.profile-mini-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.profile-mini-card img{
+
+width:100%;
+
+height:260px;
+
+object-fit:cover;
+
+}
+/* ================= FOOTER STYLING ================= */
+
+.bg-purple{
+    background-color:var(--primary-dark) !important;
+}
+
+.text-light-pink{
+    color:#FADBC0 !important;
+}
+
+.bg-dark-pink{
+    background-color:rgba(255,255,255,0.08);
+}
+
+/* Footer Links */
+.footer-links a{
+    color:#FADBC0;
+    text-decoration:none;
+    font-size:14px;
+    transition:all .3s ease;
+    display:inline-block;
+}
+
+.footer-links a:hover{
+    color:var(--gold-color);
+    transform:translateX(4px);
+}
+
+/* Social Icons Container */
+.footer-social{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/* Social Icons */
+.social-icon{
+    width:45px;
+    height:45px;
+    background:rgba(255,255,255,0.08);
+    color:#FADBC0;
+    font-size:22px;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    transition:all .3s ease;
+}
+
+.social-icon:hover{
+    background:var(--gold-color);
+    color:#7d1935;
+    transform:translateY(-3px);
+}
+
+/* Footer Bottom */
+.footer-bottom{
+    background:#F5ECF0 !important;
+    border-top:1px solid rgba(125,25,53,.08);
+}
+
+/* Mobile Footer */
+@media(max-width:768px){
+
+    .footer{
+        text-align:center;
+    }
+
+    .footer-social{
+        justify-content:center;
+        gap:15px;
+    }
+
+    .footer-bottom .container{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+    }
+
+    .footer-bottom img{
+        margin-bottom:10px;
+    }
+}
+
+.footer-bottom-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.footer-logo-section{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.footer-logo{
+    height:57px;
+}
+
+.footer-policy{
+    text-align:right;
+}
+
+@media(max-width:768px){
+
+    .footer-bottom-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .footer-logo-section{
+        flex-direction:column;
+        text-align:center;
+        gap:10px;
+    }
+
+    .footer-policy{
+        text-align:center;
+    }
+
+    .footer-logo{
+        height:50px;
+    }
+}

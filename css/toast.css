@@ -1,0 +1,38 @@
+/* ==========================================
+   KV Toast Notifications (used by api.js)
+   ========================================== */
+
+.kv-toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 14px 24px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 500;
+    z-index: 99999;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    pointer-events: none;
+}
+
+.kv-toast--visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.kv-toast--success {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.kv-toast--error {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.kv-toast--info {
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+}

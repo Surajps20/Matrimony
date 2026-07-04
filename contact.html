@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Kalyana Varan Matrimony</title>
+    <meta
+      name="description"
+      content="Get in touch with Kalyana Varan Matrimony support. Reach out for matchmaking assistance, profile queries, feedback, or any customer help."
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./src/images/kalyana-varan-logo.svg"
+      type="image/svg+xml"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="./src/images/kalyana-varan-logo.svg" alt="Kalyana Varan" />
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="profiles.html">Profiles</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact Us</a>
+            </li>
+
+            <!-- Divider -->
+            <li class="nav-item d-none d-lg-block">
+              <span class="mx-3 text-muted">|</span>
+            </li>
+
+            <!-- Login -->
+            <li class="nav-item">
+              <a href="login.html" class="custom-btn gold-btn"> Login </a>
+            </li>
+
+            <!-- Register -->
+            <li class="nav-item">
+              <a href="register.html" class="custom-btn mt-2 mt-lg-0">
+                Register
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- Banner Section -->
+<section
+    class="banner position-relative"
+    data-aos="zoom-out"
+    data-aos-duration="1200"
+    data-aos-easing="ease-in-out"
+    data-aos-once="true">
+
+    <div class="banner-content">
+        <span class="banner-tag">❤ We're Here For You</span>
+
+        <h1>
+            Let's Begin the<br>
+            <span>Conversation</span>
+        </h1>
+
+        <p>
+            Whether you have a question, need guidance, or want assistance,
+            our team is always ready to help you find your perfect match.
+        </p>
+
+        <a href="#contact-form" class="contact-btn">
+            Get Started
+        </a>
+    </div>
+
+</section>
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="contact-container">
+        <!-- Left Side: Contact Info -->
+        <div class="contact-info border-0 shadow-sm" data-aos="fade-right">
+          <h3 class="font-heading fw-bold mb-4">Contact Information</h3>
+
+          <div class="info-item mb-4">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-phone mt-1 text-primary-color me-3"></i>
+              <div>
+                <strong class="text-secondary-dark d-block"
+                  >Phone Support</strong
+                >
+                <span class="text-muted">+91 98765 43210</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-item mb-4">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-envelope mt-1 text-primary-color me-3"></i>
+              <div>
+                <strong class="text-secondary-dark d-block"
+                  >Email Address</strong
+                >
+                <span class="text-muted">support@kalyanavaran.com</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-item mb-4">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-map-marker-alt mt-1 text-primary-color me-3"></i>
+              <div>
+                <strong class="text-secondary-dark d-block"
+                  >Corporate Office</strong
+                >
+                <span class="text-muted"
+                  >2nd Floor, Royal Arcade, Anna Nagar,<br />Chennai – 600040,
+                  Tamil Nadu, India</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-clock mt-1 text-primary-color me-3"></i>
+              <div>
+                <strong class="text-secondary-dark d-block"
+                  >Working Hours</strong
+                >
+                <span class="text-muted">24/7 Customer Help Desk</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Form -->
+        <div class="contact-form border-0 shadow-sm" data-aos="fade-left">
+          <h3 class="font-heading fw-bold mb-4">Send Us a Message</h3>
+          <form
+            onsubmit="
+              event.preventDefault();
+              alert('Thank you for reaching out! We will contact you soon.');
+              this.reset();
+            "
+          >
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Your Name"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter Your Email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="Enter Your Phone Number"
+                  pattern="[0-9]{10}"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Subject of Enquiry"
+                  required
+                />
+              </div>
+            </div>
+            <div class="mb-4">
+              <textarea
+                class="form-control"
+                placeholder="Tell us how we can help you..."
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-register fw-semibold py-2.5">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Help & Support Cards -->
+    <div class="container my-5">
+      <h3 class="font-heading text-center mb-4 support-title">
+        Help & Support
+      </h3>
+      <div class="row g-4 text-center">
+        <!-- Feedback Card -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="card h-100 support-card border-0 shadow-sm"
+            data-bs-toggle="modal"
+            data-bs-target="#feedbackModal"
+          >
+            <div class="card-body py-4">
+              <div class="support-badge mb-3">
+                <i class="bi bi-exclamation-circle-fill"></i>
+              </div>
+              <h5 class="fw-bold font-heading">Feedback</h5>
+              <p class="text-muted small mb-0">
+                Share your matchmaking experience and help us improve our
+                services
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Card -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div
+            class="card h-100 support-card border-0 shadow-sm"
+            data-bs-toggle="modal"
+            data-bs-target="#faqModal"
+          >
+            <div class="card-body py-4">
+              <div class="support-badge mb-3">
+                <i class="bi bi-question-circle-fill"></i>
+              </div>
+              <h5 class="fw-bold font-heading">FAQ</h5>
+              <p class="text-muted small mb-0">
+                Find quick answers to commonly asked membership or search
+                queries
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Terms & Conditions Card -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div
+            class="card h-100 support-card border-0 shadow-sm"
+            data-bs-toggle="modal"
+            data-bs-target="#termsModal"
+          >
+            <div class="card-body py-4">
+              <div class="support-badge mb-3">
+                <i class="bi bi-file-earmark-text-fill"></i>
+              </div>
+              <h5 class="fw-bold font-heading">Terms & Conditions</h5>
+              <p class="text-muted small mb-0">
+                Read our legal bindings, privacy policy, and matchmaking
+                agreements
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dynamic FAQ Accordion -->
+    <div class="container my-5 pb-4">
+      <h4 class="font-heading text-center mb-4 faq-title">
+        Frequently Asked Questions
+      </h4>
+      <div class="faq-box p-4 shadow-sm border-0" data-aos="fade-up">
+        <div class="accordion" id="faqAccordion">
+          <!-- Q1 -->
+          <div class="accordion-item mb-2 border-0 overflow-hidden">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed rounded-custom"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#q1"
+              >
+                1. How do I login if I forget my registered email or mobile
+                number?
+              </button>
+            </h2>
+            <div
+              id="q1"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-muted small">
+                If you forgot your registered details, please reach out to our
+                customer support team at
+                <strong>support@kalyanavaran.com</strong> or call us. They will
+                assist you in verifying your identity and retrieving your login
+                credentials safely.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="accordion-item mb-2 border-0 overflow-hidden">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed rounded-custom"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#q2"
+              >
+                2. How do I reset my password?
+              </button>
+            </h2>
+            <div
+              id="q2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-muted small">
+                You can easily reset your password by clicking the "Forgot
+                Password" link on the login modal/page. An OTP code or reset
+                link will be sent to your registered email and mobile number.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="accordion-item mb-2 border-0 overflow-hidden">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed rounded-custom"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#q3"
+              >
+                3. Can I edit my registered profile details?
+              </button>
+            </h2>
+            <div
+              id="q3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-muted small">
+                Yes, you can update your personal, professional, and partner
+                preferences at any time by logging in and navigating to the Edit
+                Profile section. Certain critical fields (like Date of Birth)
+                may require document re-validation.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="accordion-item border-0 overflow-hidden">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed rounded-custom"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#q4"
+              >
+                4. Why are profile pictures blurred in matching cards?
+              </button>
+            </h2>
+            <div
+              id="q4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-muted small">
+                To safeguard our members' privacy, photo visibility can be
+                restricted to registered or accepted members only. You can
+                adjust your personal photo privacy settings in your Account
+                Settings.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feedback Modal -->
+    <div
+      class="modal fade"
+      id="feedbackModal"
+      tabindex="-1"
+      aria-hidden="true"
+      data-bs-backdrop="false"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title font-heading fw-bold">Submit Feedback</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="small text-muted mb-3">
+              We value your feedback to constantly refine our matchmaking
+              experience. Please describe your suggestions or report issues
+              below.
+            </p>
+            <textarea
+              class="form-control mb-3"
+              rows="4"
+              placeholder="Write your feedback here..."
+            ></textarea>
+            <div class="text-end">
+              <button
+                class="btn btn-secondary me-2 btn-sm rounded-pill px-3"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                class="btn btn-main btn-sm rounded-pill px-4"
+                data-bs-dismiss="modal"
+                onclick="alert('Thank you for your valuable feedback!')"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Modal -->
+    <div
+      class="modal fade"
+      id="faqModal"
+      tabindex="-1"
+      aria-hidden="true"
+      data-bs-backdrop="false"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title font-heading fw-bold">Support FAQ</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body small text-muted">
+            <p>
+              <strong>1. How do I delete my account?</strong><br />Please
+              contact our support helpdesk at support@kalyanavaran.com to
+              initiate account deletion.
+            </p>
+            <p>
+              <strong>2. Is my horoscope details public?</strong><br />By
+              default, horoscopes are visible only to verified users who match
+              your primary requirements. You can toggle this setting.
+            </p>
+            <p>
+              <strong>3. How long does verification take?</strong
+              ><br />Verification of documents is completed within 24 hours of
+              submission by our backend review team.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary btn-sm rounded-pill px-3"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Terms Modal -->
+    <div
+      class="modal fade"
+      id="termsModal"
+      tabindex="-1"
+      aria-hidden="true"
+      data-bs-backdrop="false"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title font-heading fw-bold">Terms & Conditions</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body small text-muted">
+            <p>
+              By registering on Kalyana Varan Matrimony, you agree to comply
+              with our Terms of Use and Privacy Policy. We ensure absolute
+              confidentiality of registered data.
+            </p>
+            <ul>
+              <li>Profile details must represent authentic identities.</li>
+              <li>
+                Any misrepresentation or platform abuse will lead to permanent
+                deactivation.
+              </li>
+              <li>
+                Subscription payments for Premium Plans are non-refundable.
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary btn-sm rounded-pill px-3"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer bg-purple text-white pt-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Company Info -->
+          <div class="col-lg-4 mb-4">
+            <h5 class="font-heading fw-bold mb-3 text-white">
+              Kalyana Varan Matrimony
+            </h5>
+            <p class="small text-light-pink mb-4">
+              Helping you discover pure relationships and blessed alliances
+              under the sacred institution of traditional Indian marriages.
+            </p>
+            <div class="contact-details small text-light-pink">
+              <p class="mb-2">
+                <i class="bi bi-telephone-fill me-2 text-white"></i> +91 98765
+                43210
+              </p>
+              <p class="mb-2">
+                <i class="bi bi-envelope-fill me-2 text-white"></i>
+                support@kalyanavaran.com
+              </p>
+              <p class="mb-0">
+                <i class="bi bi-geo-alt-fill me-2 text-white"></i> 2nd Floor,
+                Royal Arcade, Anna Nagar, Chennai – 600040, India
+              </p>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-6 col-md-3 col-lg-2 mb-4">
+            <h6 class="font-heading fw-bold mb-3 text-white">Company</h6>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2"><a href="index.html">Home</a></li>
+              <li class="mb-2"><a href="./profiles.html">Profile</a></li>
+              <li class="mb-2"><a href="./about.html">About Us</a></li>
+              <li class="mb-0"><a href="./contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Explore Links -->
+          <div class="col-6 col-md-3 col-lg-2 mb-4">
+            <h6 class="font-heading fw-bold mb-3 text-white">Explore</h6>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2"><a href="./profiles.html">Browse Matches</a></li>
+              <li class="mb-2"><a href="./about.html">Success Stories</a></li>
+              <li class="mb-2"><a href="#membership">Membership Plans</a></li>
+              <li class="mb-0"><a href="#termsModal">Terms & Conditions</a></li>
+            </ul>
+          </div>
+
+          <!-- Search by Profile ID & Socials -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <h6 class="font-heading fw-bold mb-3 text-white">
+              Search by Profile ID
+            </h6>
+            <form class="d-flex mb-4" action="./profiles.html" method="get">
+              <input
+                type="text"
+                class="form-control me-2 rounded-pill bg-gold text-black border-0 px-3"
+                placeholder="Enter Profile ID"
+                required
+              />
+              <button class="btn gold-btn rounded-pill px-4" type="submit">
+                Search
+              </button>
+            </form>
+
+            <h6 class="font-heading fw-bold mb-2 text-white">
+              Follow Our Stories
+            </h6>
+            <div class="footer-social">
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa fa-facebook-square"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-whatsapp-square"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="footer-bottom bg-light text-dark py-3 mt-4">
+        <div class="container footer-bottom-content">
+          <div class="footer-logo-section">
+            <img
+              src="./src/images/kalyana-varan-logo.svg"
+              alt="Kalyana Varan Logo"
+              class="footer-logo"
+            />
+
+            <p class="mb-0 small text-muted">
+              © 2026 Kalyana Varan Matrimony. All rights reserved.
+            </p>
+          </div>
+
+          <div class="footer-policy">
+            <a href="#termsModal" class="text-dark small text-decoration-none">
+              Terms & Conditions | Privacy Policy
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Dynamic terms modal target fallback for footer link -->
+    <div id="termsModal" class="modal">
+      <div class="modal-content">
+        <a href="" class="close-btn">&times;</a>
+        <h2 class="font-heading text-center mb-4">Terms & Conditions</h2>
+        <div class="modal-scroll">
+          <div class="terms">
+            <h5>1. Use of the Website</h5>
+            <ul>
+              <li>
+                Welcome to Kalyana Varan Matrimony (“Website”). Your use of this
+                Website or access of any services is subject to your acceptance
+                of these Terms and Conditions.
+              </li>
+              <li>
+                Please read these Terms carefully. If you require clarification,
+                contact
+                <a href="mailto:support@kalyanavaran.com"
+                  >support@kalyanavaran.com</a
+                >
+                before using this Website.
+              </li>
+              <li>
+                Your use of the Website signifies your agreement to all Terms,
+                policies, and notices contained herein.
+              </li>
+              <li>
+                This Website is a matrimonial matchmaking facilitation platform,
+                not a dating site. Selecting a partner is the sole
+                responsibility of the registered user.
+              </li>
+            </ul>
+
+            <h5>2. Eligibility</h5>
+            <ul>
+              <li>This Website is intended to facilitate lawful marriages.</li>
+              <li>
+                By using this Website, you confirm that you are at least 18
+                years old (if you are a woman) or 21 years old (if you are a
+                man), and legally competent to enter into a valid marriage
+                contract.
+              </li>
+            </ul>
+
+            <h5>3. Registration with the Website</h5>
+            <ul>
+              <li>
+                To access premium services, you must register on the Website.
+                You must provide accurate, complete, and up-to-date information.
+              </li>
+              <li>
+                Your registration is for personal use only. Multiple
+                registrations are not allowed.
+              </li>
+            </ul>
+
+            <h5>4. Privacy and Content Policy</h5>
+            <ul>
+              <li>
+                You are responsible for all content you post or share on the
+                Website. We ensure your personal data stays safe, private, and
+                protected as per our privacy policies.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 900,
+        once: true,
+      });
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   
+     <script src="js/script.js"></script>
+  </body>
+</html>

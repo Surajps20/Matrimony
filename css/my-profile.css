@@ -1,0 +1,775 @@
+body{
+    background:#f8f7f5;
+}
+
+/* Banner */
+
+.profile-banner{
+
+    margin-top:90px;
+    margin-bottom:50px;
+
+}
+
+.profile-header{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+}
+
+/* Profile Photo */
+
+.profile-photo{
+
+    position:relative;
+
+    width:220px;
+
+    height:220px;
+
+    margin:auto;
+
+}
+
+.profile-photo img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid var(--gold-color);
+
+}
+
+.upload-btn{
+
+    position:absolute;
+
+    bottom:10px;
+
+    right:10px;
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--primary-color);
+
+    color:#fff;
+
+}
+
+/* Text */
+
+.profile-header h2{
+
+     font-size: 34px;
+    font-weight: 700;
+    color: var(--primary-color);
+
+    /* Fix long names */
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: normal;
+    line-height: 1.2;
+    margin-bottom: 10px;
+
+}
+
+.profile-id{
+
+    color:#777;
+
+}
+
+.member-badge{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    background:linear-gradient(135deg,#D4AF37,#B8860B);
+
+    color:#fff;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+}
+
+/* Progress */
+
+.progress{
+
+    height:12px;
+
+    border-radius:30px;
+
+}
+
+.progress-bar{
+
+    background:linear-gradient(90deg,var(--primary-color),var(--gold-color));
+
+}
+
+/* Card */
+
+.info-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+}
+
+.card-header-custom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.card-header-custom h4{
+
+    color:var(--primary-color);
+
+    margin:0;
+
+}
+
+.btn-edit{
+
+    border:none;
+
+    background:var(--primary-color);
+
+    color:#fff;
+
+    border-radius:30px;
+
+    padding:8px 18px;
+
+    text-decoration:none;
+
+    display:inline-block;
+
+    font-size:14px;
+
+    cursor:pointer;
+
+}
+
+.detail-item{
+
+    margin-bottom:22px;
+
+}
+
+.detail-item label{
+
+    display:block;
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:4px;
+
+}
+
+.detail-item p{
+
+    margin:0;
+
+    font-weight:600;
+
+    color:#222;
+
+}
+
+@media(max-width:992px){
+
+.profile-header{
+
+text-align:center;
+
+}
+
+.profile-photo{
+
+margin-bottom:25px;
+
+}
+
+.card-header-custom{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+@media(max-width:768px){
+
+    .preference-grid{
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+
+}
+
+}
+.preference-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:20px;
+    width:100%;
+}
+
+.pref-box{
+
+background:#faf7f5;
+
+padding:18px;
+
+border-radius:15px;
+
+border:1px solid rgba(125,25,53,.08);
+
+transition:.3s;
+
+}
+
+.pref-box:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 8px 20px rgba(0,0,0,.06);
+
+}
+
+.pref-box label{
+
+display:block;
+
+font-size:13px;
+
+color:#888;
+
+margin-bottom:6px;
+
+}
+
+.pref-box p{
+
+margin:0;
+
+font-weight:600;
+
+color:#222;
+
+}
+/* ================= PHOTOS ================= */
+
+.photo-card{
+
+overflow:hidden;
+
+border-radius:18px;
+
+height:260px;
+
+}
+
+.photo-card img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.35s;
+
+}
+
+.photo-card:hover img{
+
+transform:scale(1.05);
+
+}
+
+.upload-photo-card{
+
+height:260px;
+
+border:2px dashed #d8d8d8;
+
+border-radius:18px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.upload-photo-card:hover{
+
+border-color:var(--primary-color);
+
+background:#faf7f5;
+
+}
+
+.upload-photo-card i{
+
+font-size:45px;
+
+color:var(--primary-color);
+
+margin-bottom:15px;
+
+}
+
+.membership-card{
+    background: linear-gradient(135deg,#7d1935,#9d2748);
+    color:#fff;
+    padding:40px;
+    border-radius:24px;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(125,25,53,.18);
+}
+
+.membership-card::before{
+    content:"";
+    position:absolute;
+    top:-60px;
+    right:-60px;
+    width:220px;
+    height:220px;
+    background:rgba(212,175,55,.08);
+    border-radius:50%;
+}
+
+.membership-card h3{
+    color:#F7D774;
+    font-size:2rem;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.membership-card p{
+    font-size:1.1rem;
+    margin-bottom:25px;
+}
+
+/* ================= SETTINGS ================= */
+
+.settings-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.setting-btn{
+
+border:none;
+
+padding:18px;
+
+background:#faf7f5;
+
+border-radius:14px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.setting-btn:hover{
+
+background:var(--primary-color);
+
+color:#fff;
+
+transform:translateY(-4px);
+
+}
+.btn-renew-membership{
+    background: linear-gradient(135deg, #F7D774, #D4AF37);
+    color: var(--primary-dark);
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.35);
+}
+
+.btn-renew-membership:hover{
+    background: linear-gradient(135deg, #FFE89A, #E0B93F);
+    color: var(--primary-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(212, 175, 55, 0.45);
+}
+
+.btn-renew-membership i{
+    margin-right:8px;
+}
+/* ===================================
+   Breadcrumb & Back Navigation
+=================================== */
+
+.profile-navigation{
+    margin-bottom:30px;
+}
+
+.breadcrumb{
+    background:transparent;
+    padding:0;
+    margin:0;
+}
+
+.breadcrumb-item{
+    font-size:15px;
+}
+
+.breadcrumb-item a{
+    color:var(--primary-color);
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.breadcrumb-item a:hover{
+    color:var(--secondary-color);
+}
+
+.breadcrumb-item.active{
+    color:#666;
+}
+
+.back-dashboard{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    color:var(--primary-color);
+    font-weight:600;
+    text-decoration:none;
+    margin-top:10px;
+    transition:.3s;
+}
+
+.back-dashboard:hover{
+    color:var(--secondary-color);
+    transform:translateX(-5px);
+}
+
+.back-dashboard i{
+    font-size:14px;
+}
+
+
+
+/* ===================================
+   MY PROFILE RESPONSIVE
+=================================== */
+
+/* Laptop */
+@media (max-width:1200px){
+
+    .profile-header{
+        padding:30px;
+    }
+
+    .profile-photo{
+        width:190px;
+        height:190px;
+    }
+
+    .info-card{
+        padding:28px;
+    }
+
+}
+
+/* Tablet */
+@media (max-width:992px){
+
+    .profile-banner{
+        margin-top:80px;
+    }
+
+    .profile-header{
+        text-align:center;
+        padding:25px;
+    }
+
+    .profile-photo{
+        width:170px;
+        height:170px;
+        margin:0 auto 20px;
+    }
+
+    .profile-header h2{
+        font-size:30px;
+    }
+
+    .card-header-custom{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .btn-edit{
+        width:100%;
+        text-align:center;
+    }
+
+    .membership-card{
+        padding:30px;
+        text-align:center;
+    }
+
+    .btn-renew-membership{
+        width:100%;
+    }
+
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    .profile-banner{
+        margin-top:70px;
+        margin-bottom:30px;
+    }
+
+    .profile-header{
+        padding:20px;
+        border-radius:16px;
+    }
+
+    .profile-photo{
+        width:140px;
+        height:140px;
+    }
+
+    .upload-btn{
+        width:40px;
+        height:40px;
+    }
+
+    .profile-header h2{
+        font-size:26px;
+    }
+
+    .profile-id{
+        font-size:14px;
+    }
+
+    .member-badge{
+        font-size:13px;
+        padding:7px 16px;
+    }
+
+    .info-card{
+        padding:20px;
+        border-radius:16px;
+    }
+
+    .card-header-custom{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:12px;
+        margin-bottom:20px;
+    }
+
+    .card-header-custom h4{
+        font-size:22px;
+    }
+
+    .detail-item label{
+        font-size:13px;
+    }
+
+    .detail-item p{
+        font-size:15px;
+    }
+
+    .preference-grid{
+        grid-template-columns:1fr;
+    }
+
+    .pref-box{
+        padding:16px;
+    }
+
+    .photo-card,
+    .upload-photo-card{
+        height:220px;
+    }
+
+    .membership-card{
+        padding:25px;
+    }
+
+    .membership-card h3{
+        font-size:28px;
+    }
+
+    .membership-card p{
+        font-size:16px;
+    }
+
+    .settings-grid{
+        grid-template-columns:1fr;
+    }
+
+    .setting-btn{
+        width:100%;
+    }
+
+    .breadcrumb-item{
+        font-size:13px;
+    }
+
+    .back-dashboard{
+        font-size:14px;
+    }
+
+}
+
+
+/* Small Mobile */
+@media (max-width:576px){
+
+    .profile-banner{
+        margin-top:65px;
+    }
+
+    .profile-header{
+        padding:18px;
+    }
+
+    .profile-photo{
+        width:120px;
+        height:120px;
+    }
+
+    .upload-btn{
+        width:36px;
+        height:36px;
+        font-size:14px;
+    }
+
+    .profile-header h2{
+        font-size:22px;
+    }
+
+    .member-badge{
+        font-size:12px;
+        padding:6px 14px;
+    }
+
+    .info-card{
+        padding:18px;
+    }
+
+    .card-header-custom h4{
+        font-size:22px;
+    line-height:1.2;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    }
+
+    .card-header-custom h4 i{
+    font-size:18px;
+}
+
+    .detail-item{
+        margin-bottom:18px;
+    }
+
+    .detail-item p{
+        font-size:15px;
+    }
+
+    .photo-card,
+    .upload-photo-card{
+        height:190px;
+    }
+
+    .membership-card{
+        padding:20px;
+    }
+
+    .membership-card h3{
+        font-size:24px;
+    }
+
+    .membership-card p{
+        font-size:15px;
+    }
+
+    .btn-renew-membership{
+        width:100%;
+        font-size:15px;
+        padding:12px;
+    }
+
+    .btn-edit{
+        width:100%;
+        font-size:14px;
+    }
+
+    .setting-btn{
+        font-size:14px;
+        padding:15px;
+    }
+
+}

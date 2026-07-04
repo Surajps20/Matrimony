@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Photos | Kalyana Varan</title>
+    <meta name="description" content="Upload and manage profile photos for your Kalyana Varan matrimony profile.">
+
+    <link rel="shortcut icon" href="./src/images/kalyana-varan-logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/photos.css">
+    <link rel="stylesheet" href="css/toast.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body data-page="photos">
+
+    <section class="dashboard-container">
+        <div id="user-sidebar" data-active="photos"></div>
+
+        <main class="dashboard-main">
+            <section class="page-hero compact">
+                <div>
+                    <span class="page-tag">Gallery</span>
+                    <h1>Profile Photos</h1>
+                    <p>Upload clear photos to get 3x more profile views. Primary photo appears in search results.</p>
+                </div>
+                <div class="photo-stats">
+                    <span><strong>2</strong> / 5 uploaded</span>
+                </div>
+            </section>
+
+            <section class="upload-zone">
+                <form id="photoUploadForm" action="php/upload-photo.php" method="POST" enctype="multipart/form-data">
+                    <div class="upload-box" id="dropZone">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <h4>Drag &amp; drop photos here</h4>
+                        <p>JPG, PNG up to 5MB each. Max 5 photos.</p>
+                        <label class="upload-label">
+                            Browse Files
+                            <input type="file" name="photos[]" id="photoInput" accept="image/*" multiple hidden>
+                        </label>
+                    </div>
+                </form>
+                <ul class="upload-tips">
+                    <li><i class="fas fa-check-circle"></i> Use recent, clear face photos</li>
+                    <li><i class="fas fa-check-circle"></i> Avoid group photos as primary</li>
+                    <li><i class="fas fa-check-circle"></i> Photos are reviewed before going live</li>
+                </ul>
+            </section>
+
+            <section class="photo-gallery-section">
+                <div class="section-title">
+                    <h2>Your Photos</h2>
+                    <p class="text-muted mb-0">Drag to reorder. First photo is your primary profile picture.</p>
+                </div>
+
+                <div class="photo-grid" id="photoGrid">
+                    <article class="photo-card primary">
+                        <img src="./src/images/boy3.png" alt="Primary photo">
+                        <span class="photo-badge">Primary</span>
+                        <div class="photo-overlay">
+                            <button type="button" class="photo-action" title="Set as primary"><i class="fas fa-star"></i></button>
+                            <button type="button" class="photo-action delete-photo" title="Delete"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </article>
+
+                    <article class="photo-card">
+                        <img src="./src/images/boy1.png" alt="Profile photo">
+                        <div class="photo-overlay">
+                            <button type="button" class="photo-action set-primary" title="Set as primary"><i class="fas fa-star"></i></button>
+                            <button type="button" class="photo-action delete-photo" title="Delete"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </article>
+
+                    <article class="photo-card add-slot">
+                        <label for="photoInput">
+                            <i class="fas fa-plus"></i>
+                            <span>Add Photo</span>
+                        </label>
+                    </article>
+                </div>
+            </section>
+
+            <section class="horoscope-upload">
+                <h3><i class="fas fa-moon me-2"></i>Horoscope Upload</h3>
+                <p>Upload your horoscope (PDF or image) for astrology-based matching.</p>
+                <form action="php/upload-horoscope.php" method="POST" enctype="multipart/form-data" class="horoscope-form">
+                    <input type="file" name="horoscope" accept=".pdf,image/*" class="form-control">
+                    <button type="submit" class="btn custom-btn">Upload Horoscope</button>
+                </form>
+            </section>
+        </main>
+    </section>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/user-layout.js"></script>
+    <script src="js/photos.js"></script>
+</body>
+
+</html>

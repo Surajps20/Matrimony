@@ -1,0 +1,1253 @@
+/*==================================================
+    AUTHENTICATION PAGES
+    Kalyana Varan Matrimony
+==================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*======================================
+    ROOT VARIABLES
+======================================*/
+
+:root {
+
+  --primary-color: #7D1935;
+  --primary-dark: #5D1228;
+  --secondary-color: #A23B57;
+  --accent-color: #C89666;
+  --background-color: #FAF1EA;
+  --text-color: #3B1B22;
+  --white: #FFFFFF;
+  --border-color: #E9D7C5;
+  --gold-color: #D4AF37;
+
+  --shadow: 0 15px 40px rgba(125, 25, 53, 0.12);
+  --radius: 20px;
+  --transition: all .35s ease;
+
+}
+
+/*======================================
+    LOGIN SECTION
+======================================*/
+
+.login-section{
+
+    position:relative;
+    overflow:hidden;
+
+    padding:90px 0;
+
+    background:var(--background-color);
+
+}
+
+/* Decorative Background */
+
+.login-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+    height:350px;
+
+    background:rgba(125,25,53,.05);
+
+    border-radius:50%;
+
+    top:-150px;
+    left:-150px;
+
+}
+
+.login-section::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+    height:300px;
+
+    background:rgba(212,175,55,.08);
+
+    border-radius:50%;
+
+    bottom:-120px;
+    right:-120px;
+
+}
+
+/*======================================
+    LEFT CONTENT
+======================================*/
+
+.login-info{
+
+    position:relative;
+    z-index:2;
+
+}
+
+.login-badge{
+
+    display:inline-block;
+
+    background:rgba(212,175,55,.12);
+
+    color:var(--primary-color);
+
+    border:1px solid rgba(212,175,55,.25);
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+}
+
+.login-title{
+
+    font-size:48px;
+
+    font-weight:700;
+
+    color:var(--primary-color);
+
+    line-height:1.3;
+
+}
+
+.login-title span{
+
+    color:var(--gold-color);
+
+}
+
+.login-description{
+
+    color:var(--text-color);
+
+    font-size:16px;
+
+    line-height:1.9;
+
+}
+
+/*======================================
+    FEATURES
+======================================*/
+
+.login-features{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+.feature-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+}
+
+.feature-item i{
+
+    width:58px;
+    height:58px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+    color:var(--white);
+
+    font-size:22px;
+
+    flex-shrink:0;
+
+}
+
+.feature-item h6{
+
+    color:var(--primary-color);
+
+    font-weight:600;
+
+    margin-bottom:5px;
+
+}
+
+.feature-item p{
+
+    color:var(--text-color);
+
+    margin:0;
+
+    line-height:1.7;
+
+}
+
+/*======================================
+    LOGIN CARD
+======================================*/
+
+.login-card{
+
+    position: relative;
+    z-index: 2;
+
+    background: var(--white);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: var(--radius);
+
+    padding: 45px;
+
+    box-shadow: var(--shadow);
+
+    transition: var(--transition);
+
+}
+
+.login-card:hover{
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 50px rgba(125,25,53,.15);
+
+}
+
+/*======================================
+    LOGIN ICON
+======================================*/
+
+.login-icon{
+
+    width:90px;
+    height:90px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+    color:var(--white);
+
+    font-size:36px;
+
+    box-shadow:0 10px 30px rgba(125,25,53,.20);
+
+}
+
+.login-card h2{
+
+    font-size:32px;
+
+    font-weight:700;
+
+    color:var(--primary-color);
+
+}
+
+.login-card p{
+
+    color:var(--text-color);
+
+}
+
+/*======================================
+    FORM LABELS
+======================================*/
+
+.form-label{
+
+    color:var(--primary-color);
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+/*======================================
+    INPUT GROUP
+======================================*/
+
+.input-group{
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+}
+
+.input-group-text{
+
+    background:var(--background-color);
+
+    border:1px solid var(--border-color);
+
+    color:var(--primary-color);
+
+    width:52px;
+
+    justify-content:center;
+
+}
+
+.form-control{
+
+    border:1px solid var(--border-color);
+
+    padding:14px 16px;
+
+    color:var(--text-color);
+
+    font-size:15px;
+
+    box-shadow:none;
+
+}
+
+.form-control::placeholder{
+
+    color:#9a7f71;
+
+}
+
+.form-control:focus{
+
+    border-color:var(--accent-color);
+
+    box-shadow:0 0 0 .2rem rgba(200,150,102,.20);
+
+}
+
+/*======================================
+    PASSWORD BUTTON
+======================================*/
+
+.password-toggle{
+
+    background:var(--background-color);
+
+    border:1px solid var(--border-color);
+
+    color:var(--primary-color);
+
+    width:55px;
+
+    transition:var(--transition);
+
+}
+
+.password-toggle:hover{
+
+    background:var(--primary-color);
+
+    color:var(--white);
+
+}
+
+/*======================================
+    CHECKBOX
+======================================*/
+
+.form-check-input{
+
+    border-color:var(--accent-color);
+
+}
+
+.form-check-input:checked{
+
+    background:var(--primary-color);
+
+    border-color:var(--primary-color);
+
+}
+
+.form-check-label{
+
+    color:var(--text-color);
+
+    font-size:15px;
+
+}
+
+/*======================================
+    FORGOT PASSWORD
+======================================*/
+
+.forgot-link{
+
+    color:var(--primary-color);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.forgot-link:hover{
+
+    color:var(--gold-color);
+
+}
+
+/*======================================
+    LOGIN BUTTON
+======================================*/
+
+.login-btn{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+    border:none;
+
+    color:var(--white);
+
+    padding:14px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    border-radius:12px;
+
+    transition:var(--transition);
+
+}
+
+.login-btn:hover{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary-dark),
+        var(--primary-color)
+    );
+
+    color:var(--white);
+
+    transform:translateY(-2px);
+
+    box-shadow:0 12px 25px rgba(125,25,53,.25);
+
+}
+
+/*======================================
+    DIVIDER
+======================================*/
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.divider::before,
+.divider::after{
+
+    content:"";
+
+    flex:1;
+
+    height:1px;
+
+    background:var(--border-color);
+
+}
+
+.divider span{
+
+    padding:0 18px;
+
+    color:var(--text-color);
+
+    font-size:14px;
+
+}
+
+/*======================================
+    REGISTER LINK
+======================================*/
+
+.register-link{
+
+    color:var(--primary-color);
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    transition:var(--transition);
+
+}
+
+.register-link:hover{
+
+    color:var(--gold-color);
+
+}
+
+
+/*======================================
+    INPUT & BUTTON ANIMATIONS
+======================================*/
+
+.form-control,
+.input-group-text,
+.password-toggle,
+.login-btn {
+
+    transition: var(--transition);
+
+}
+
+.form-control:hover {
+
+    border-color: var(--accent-color);
+
+}
+
+.feature-item{
+
+    transition: var(--transition);
+
+}
+
+.feature-item:hover{
+
+    transform: translateX(8px);
+
+}
+
+.login-card{
+
+    animation: fadeUp .7s ease;
+
+}
+
+.login-info{
+
+    animation: fadeLeft .8s ease;
+
+}
+
+/*======================================
+    KEYFRAMES
+======================================*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/*======================================
+    TABLET
+======================================*/
+
+@media (max-width:991.98px){
+
+    .login-section{
+
+        padding:70px 0;
+
+    }
+
+    .login-card{
+
+        padding:35px;
+
+    }
+
+    .login-title{
+
+        font-size:38px;
+
+    }
+
+}
+
+/*======================================
+    MOBILE
+======================================*/
+
+@media (max-width:767.98px){
+
+    .login-section{
+
+        padding:60px 0;
+
+    }
+
+    .login-card{
+
+        padding:30px 22px;
+
+        border-radius:16px;
+
+    }
+
+    .login-icon{
+
+        width:75px;
+        height:75px;
+
+        font-size:30px;
+
+    }
+
+    .login-card h2{
+
+        font-size:28px;
+
+    }
+
+    .form-control{
+
+        padding:12px 14px;
+
+        font-size:14px;
+
+    }
+
+    .input-group-text{
+
+        width:46px;
+
+    }
+
+    .password-toggle{
+
+        width:48px;
+
+    }
+
+    .login-btn{
+
+        padding:13px;
+
+        font-size:16px;
+
+    }
+
+}
+
+/*======================================
+    SMALL MOBILE
+======================================*/
+
+@media (max-width:575.98px){
+
+    .login-section{
+
+        padding:45px 0;
+
+    }
+
+    .login-card{
+
+        padding:25px 18px;
+
+    }
+
+    .divider span{
+
+        font-size:13px;
+
+    }
+
+    .form-check{
+
+        margin-bottom:10px;
+
+    }
+
+    .d-flex.justify-content-between{
+
+        flex-direction:column;
+
+        align-items:flex-start !important;
+
+        gap:10px;
+
+    }
+
+}
+
+/*======================================
+    EXTRA SMALL DEVICES
+======================================*/
+
+@media (max-width:360px){
+
+    .login-card{
+
+        padding:20px 15px;
+
+    }
+
+    .login-icon{
+
+        width:65px;
+        height:65px;
+
+        font-size:26px;
+
+    }
+
+    .login-card h2{
+
+        font-size:24px;
+
+    }
+
+}
+
+/*======================================
+    REMOVE DEFAULT BOOTSTRAP SHADOW
+======================================*/
+
+.btn:focus,
+.form-control:focus,
+.form-check-input:focus{
+
+    box-shadow:none;
+
+}
+
+/*======================================
+    SELECTION
+======================================*/
+
+::selection{
+
+    background:var(--primary-color);
+
+    color:var(--white);
+
+}
+
+/*==================================================
+        REGISTER PAGE
+==================================================*/
+
+/* Form Select */
+
+.form-select{
+
+    border:1px solid var(--border-color);
+
+    padding:14px 16px;
+
+    color:var(--text-color);
+
+    font-size:15px;
+
+    box-shadow:none;
+
+    transition:var(--transition);
+
+}
+
+.form-select:focus{
+
+    border-color:var(--accent-color);
+
+    box-shadow:0 0 0 .2rem rgba(200,150,102,.18);
+
+}
+
+.form-select option{
+
+    color:var(--text-color);
+
+}
+
+/*======================================
+    TERMS LINK
+======================================*/
+
+.form-check a{
+
+    color:var(--primary-color);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.form-check a:hover{
+
+    color:var(--gold-color);
+
+}
+
+/*======================================
+    REGISTER BUTTON
+======================================*/
+
+.login-btn{
+
+    letter-spacing:.5px;
+
+}
+
+/*======================================
+    INPUT ICON ANIMATION
+======================================*/
+
+.input-group:hover .input-group-text{
+
+    background:var(--primary-color);
+
+    color:var(--white);
+
+}
+
+/*======================================
+    FORM SPACING
+======================================*/
+
+#registerForm .mb-3{
+
+    margin-bottom:18px !important;
+
+}
+
+/*======================================
+    PASSWORD STRENGTH
+======================================*/
+
+.password-strength{
+
+    margin-top:8px;
+
+    height:6px;
+
+    border-radius:30px;
+
+    background:#eee;
+
+    overflow:hidden;
+
+}
+
+.password-strength span{
+
+    display:block;
+
+    width:0;
+
+    height:100%;
+
+    transition:.4s;
+
+}
+
+/*======================================
+    SUCCESS
+======================================*/
+
+.strength-weak{
+
+    width:30% !important;
+
+    background:#dc3545;
+
+}
+
+.strength-medium{
+
+    width:65% !important;
+
+    background:#ffc107;
+
+}
+
+.strength-strong{
+
+    width:100% !important;
+
+    background:#198754;
+
+}
+
+/*======================================
+    PASSWORD MESSAGE
+======================================*/
+
+.password-text{
+
+    margin-top:8px;
+
+    font-size:13px;
+
+    font-weight:500;
+
+}
+
+/*======================================
+    MOBILE
+======================================*/
+
+@media(max-width:768px){
+
+    #registerForm .mb-3{
+
+        margin-bottom:16px !important;
+
+    }
+
+}
+
+
+/*==================================================
+        PERSONAL DETAILS PAGE
+==================================================*/
+
+/* Section Title */
+
+.login-card h3{
+
+    color: var(--primary-color);
+
+    font-weight: 700;
+
+    font-size: 28px;
+
+}
+
+/*======================================
+    PROGRESS CARD
+======================================*/
+
+.progress{
+
+    background: #efe4da;
+
+    border-radius: 50px;
+
+    overflow: hidden;
+
+}
+
+.progress-bar{
+
+    border-radius: 50px;
+
+    transition: width .5s ease;
+
+}
+
+/*======================================
+    PROFILE IMAGE
+======================================*/
+
+.profile-upload{
+
+    position: relative;
+
+    width: 160px;
+
+    height: 160px;
+
+    margin: auto;
+
+}
+
+.profile-preview{
+
+    width: 160px;
+
+    height: 160px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 5px solid var(--white);
+
+    box-shadow: 0 10px 30px rgba(125,25,53,.15);
+
+    background: var(--background-color);
+
+}
+
+/* Upload Button */
+
+.upload-btn{
+
+    position: absolute;
+
+    bottom: 5px;
+
+    right: 5px;
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+    color: var(--white);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+
+    border: 3px solid var(--white);
+
+}
+
+.upload-btn:hover{
+
+    transform: scale(1.1);
+
+    color: var(--white);
+
+}
+
+/*======================================
+    TEXTAREA
+======================================*/
+
+textarea.form-control{
+
+    resize: none;
+
+    min-height: 140px;
+
+    padding: 15px;
+
+}
+
+/*======================================
+    SECTION DIVIDER
+======================================*/
+
+hr{
+
+    border-color: var(--border-color);
+
+    opacity: .8;
+
+}
+
+/*======================================
+    BACK BUTTON
+======================================*/
+
+.btn-outline-secondary{
+
+    border:2px solid var(--primary-color);
+
+    color: var(--primary-color);
+
+    border-radius: 12px;
+
+    font-weight: 600;
+
+    transition: var(--transition);
+
+}
+
+.btn-outline-secondary:hover{
+
+    background: var(--primary-color);
+
+    color: var(--white);
+
+}
+
+/*======================================
+    INPUT HOVER
+======================================*/
+
+.form-control:hover,
+.form-select:hover{
+
+    border-color: var(--accent-color);
+
+}
+
+/*======================================
+    CARD ANIMATION
+======================================*/
+
+.login-card{
+
+    transition: .4s;
+
+}
+
+.login-card:hover{
+
+    transform: translateY(-5px);
+
+}
+
+/*======================================
+    MOBILE
+======================================*/
+
+@media(max-width:991px){
+
+    .profile-preview{
+
+        width:140px;
+
+        height:140px;
+
+    }
+
+    .profile-upload{
+
+        width:140px;
+
+        height:140px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .login-card{
+
+        padding:30px 20px;
+
+    }
+
+    .login-card h3{
+
+        font-size:24px;
+
+    }
+
+    .profile-preview{
+
+        width:120px;
+
+        height:120px;
+
+    }
+
+    .profile-upload{
+
+        width:120px;
+
+        height:120px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .d-flex.justify-content-between{
+
+        flex-direction: column;
+
+        gap:15px;
+
+    }
+
+    .btn-outline-secondary,
+    .login-btn{
+
+        width:100%;
+
+    }
+
+}

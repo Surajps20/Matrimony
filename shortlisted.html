@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Shortlist | Kalyana Varan</title>
+
+    <meta
+      name="description"
+      content="View and manage profiles you have shortlisted for future consideration."
+    />
+
+    <!-- Bootstrap -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- Bootstrap Icons -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+
+    <!-- AOS -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+
+    <link
+      rel="shortcut icon"
+      href="./src/images/kalyana-varan-logo.svg"
+      type="image/svg+xml"
+    />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/shortlisted.css" />
+    <link rel="stylesheet" href="css/toast.css" />
+  </head>
+
+  <body data-page="shortlisted">
+
+    <section class="dashboard-container">
+      <div id="user-sidebar" data-active="shortlisted"></div>
+
+      <main class="dashboard-main user-page-content">
+
+    <section class="shortlist-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <span class="page-tag"> Shortlisted Profiles </span>
+
+            <h1 class="mt-3">My Shortlist</h1>
+
+            <p class="page-description">
+              View all the profiles you've shortlisted for future consideration.
+            </p>
+          </div>
+
+          <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+            <a href="profiles.html" class="btn btn-main">
+              <i class="fa-solid fa-magnifying-glass me-2"></i>
+
+              Browse Profiles
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <!--=========================================
+        SHORTLIST SUMMARY
+==========================================-->
+
+    <section class="shortlist-summary">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="activity-card">
+              <div class="activity-icon received">
+                <i class="fa-solid fa-bookmark"></i>
+              </div>
+
+              <div>
+                <h2>18</h2>
+
+                <span>Total Shortlisted</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="activity-card">
+              <div class="activity-icon sent">
+                <i class="fa-solid fa-paper-plane"></i>
+              </div>
+
+              <div>
+                <h2>09</h2>
+
+                <span>Interest Sent</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="activity-card">
+              <div class="activity-icon accepted">
+                <i class="fa-solid fa-crown"></i>
+              </div>
+
+              <div>
+                <h2>07</h2>
+
+                <span>Premium Profiles</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="activity-card">
+              <div class="activity-icon declined">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+
+              <div>
+                <h2>05</h2>
+
+                <span>Viewed Recently</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <section class="shortlist-toolbar">
+      <div class="container">
+        <div class="toolbar-wrapper">
+          <div class="results-count">
+            <h5>Showing <span>18</span> Shortlisted Profiles</h5>
+
+            <p>Manage your saved profiles.</p>
+          </div>
+
+          <div class="toolbar-right">
+            <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+
+              <input type="text" placeholder="Search Name / Profile ID" />
+            </div>
+
+            <select class="sort-dropdown">
+              <option>Recently Added</option>
+
+              <option>Premium First</option>
+
+              <option>Age</option>
+
+              <option>Location</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <!--=========================================
+        SHORTLISTED PROFILE CARD
+==========================================-->
+
+    <section class="shortlist-list pb-4">
+      <div class="container">
+        <!-- Card 1 -->
+
+        <div class="shortlist-card">
+          <div class="profile-image">
+            <img src="src/images/profile1.jpg" alt="Profile" />
+
+            <span class="online-dot"></span>
+          </div>
+
+          <div class="profile-content">
+            <div class="profile-top">
+              <div>
+                <h3>Ananya R</h3>
+
+                <div class="profile-badges">
+                  <span class="verified-badge">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Verified
+                  </span>
+
+                  <span class="premium-badge">
+                    <i class="fa-solid fa-crown"></i>
+                    Premium
+                  </span>
+                </div>
+              </div>
+
+              <span class="saved-badge">
+                <i class="fa-solid fa-bookmark"></i>
+                Shortlisted
+              </span>
+            </div>
+
+            <div class="profile-info">
+              <span><i class="fa-solid fa-user"></i>25 Years</span>
+
+              <span><i class="fa-solid fa-ruler-vertical"></i>5'5"</span>
+
+              <span><i class="fa-solid fa-graduation-cap"></i>MBA</span>
+
+              <span
+                ><i class="fa-solid fa-briefcase"></i>Software Engineer</span
+              >
+
+              <span><i class="fa-solid fa-location-dot"></i>Chennai</span>
+            </div>
+
+            <div class="saved-date">
+              <i class="fa-regular fa-clock"></i>
+
+              Shortlisted 2 days ago
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <a href="profile-details.html" class="btn-view">
+              <i class="fa-solid fa-user me-2"></i>
+
+              View Profile
+            </a>
+
+            <div class="action-row">
+              <button class="btn-send-interest">
+                <i class="fa-solid fa-paper-plane me-2"></i>
+
+                Send Interest
+              </button>
+
+              <button class="btn-remove">
+                <i class="fa-solid fa-trash me-2"></i>
+
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="empty-shortlist d-none">
+      <div class="container">
+        <div class="empty-card">
+          <i class="fa-regular fa-bookmark"></i>
+
+          <h3>No Shortlisted Profiles</h3>
+
+          <p>
+            Save profiles you're interested in so you can easily find them
+            later.
+          </p>
+
+          <a href="profiles.html" class="btn btn-main"> Browse Profiles </a>
+        </div>
+      </div>
+    </section>
+
+    <!--=========================================
+            PAGINATION
+==========================================-->
+
+    <div class="interest-pagination">
+      <nav>
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#">
+              <i class="fa-solid fa-angle-left"></i>
+            </a>
+          </li>
+
+          <li class="page-item active">
+            <a class="page-link" href="#">1</a>
+          </li>
+
+          <li class="page-item">
+            <a class="page-link" href="#">2</a>
+          </li>
+
+          <li class="page-item">
+            <a class="page-link" href="#">3</a>
+          </li>
+
+          <li class="page-item">
+            <a class="page-link" href="#">
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+      </main>
+    </section>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/user-layout.js"></script>
+    <script src="js/shortlisted.js"></script>
+  </body>
+</html>

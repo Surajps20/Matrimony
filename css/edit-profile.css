@@ -1,0 +1,74 @@
+.edit-form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.edit-nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    background:#fff;
+    padding:12px;
+    border-radius:16px;
+    box-shadow:0 6px 20px rgba(0,0,0,.06);
+    position:sticky;
+    top:80px;
+    z-index:10;
+}
+
+.edit-nav a{
+    padding:10px 18px;
+    border-radius:30px;
+    text-decoration:none;
+    color:#555;
+    font-weight:500;
+    font-size:14px;
+    transition:.3s;
+}
+
+.edit-nav a:hover,
+.edit-nav a.active{
+    background:#7d1935;
+    color:#fff;
+}
+
+.edit-section{
+    background:#fff;
+    border-radius:18px;
+    padding:28px;
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+    scroll-margin-top:120px;
+}
+
+.edit-section h3{
+    color:#7d1935;
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+.edit-section h3 i{
+    margin-right:10px;
+    color:#d4af37;
+}
+
+.form-actions{
+    display:flex;
+    justify-content:flex-end;
+    gap:12px;
+    padding-bottom:20px;
+}
+
+.form-actions .btn-secondary{
+    padding:12px 28px;
+    border-radius:30px;
+}
+
+@media(max-width:576px){
+    .edit-nav a{
+        flex:1;
+        text-align:center;
+        font-size:12px;
+        padding:8px 10px;
+    }
+}

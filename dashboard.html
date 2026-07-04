@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalyana Varan | Dashboard</title>
+    <meta name="description" content="Manage your matrimony profile, view matches, interests and membership on Kalyana Varan.">
+
+    <link rel="shortcut icon" href="./src/images/kalyana-varan-logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/toast.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body data-page="dashboard">
+
+    <section class="dashboard-container">
+
+        <div id="user-sidebar" data-active="dashboard"></div>
+
+        <main class="dashboard-main">
+
+            <section class="welcome-banner">
+                <div>
+                    <h2>Welcome back, <span>Suraj 👋</span></h2>
+                    <p>Your profile is getting noticed. Complete the remaining details to receive better matches.</p>
+                </div>
+                <button type="button" class="primary-btn">Complete Profile</button>
+            </section>
+
+            <section class="completion-wrapper">
+                <div class="completion-card">
+                    <div class="completion-header">
+                        <div>
+                            <h3>Profile Completion</h3>
+                            <p>Your profile is almost ready.</p>
+                        </div>
+                        <h2>75%</h2>
+                    </div>
+                    <div class="progress-area">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div class="check-grid">
+                        <div class="completed">✔ Personal</div>
+                        <div class="completed">✔ Education</div>
+                        <div class="completed">✔ Family</div>
+                        <div class="completed">✔ Partner Preference</div>
+                        <div class="pending">✖ Upload Photos</div>
+                        <div class="pending">✖ Horoscope</div>
+                    </div>
+            </section>
+
+            <section class="dashboard-section profile-details-section">
+                <div class="section-title">
+                    <h2>My Profile Details</h2>
+                    <a href="my-profile.html">View Full Profile</a>
+                </div>
+                <div class="profile-details-grid">
+                    <!-- Personal Info Card -->
+                    <div class="info-card-mini">
+                        <h4><i class="fas fa-user"></i> Personal Details</h4>
+                        <div class="details-list">
+                            <div class="detail-row"><span class="label">Full Name:</span><span class="value" data-profile-field="fullname">Suraj P S</span></div>
+                            <div class="detail-row"><span class="label">Age & Gender:</span><span class="value" data-profile-field="age_gender">24 Years | Male</span></div>
+                            <div class="detail-row"><span class="label">Religion & Caste:</span><span class="value" data-profile-field="religion_caste">Hindu | Iyer</span></div>
+                            <div class="detail-row"><span class="label">Mother Tongue:</span><span class="value" data-profile-field="motherTongue">Tamil</span></div>
+                            <div class="detail-row"><span class="label">Location:</span><span class="value" data-profile-field="location">Madurai, TN</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Education & Career Card -->
+                    <div class="info-card-mini">
+                        <h4><i class="fas fa-graduation-cap"></i> Education & Career</h4>
+                        <div class="details-list">
+                            <div class="detail-row"><span class="label">Education:</span><span class="value" data-profile-field="education">B.E Computer Science</span></div>
+                            <div class="detail-row"><span class="label">Occupation:</span><span class="value" data-profile-field="profession">QA Engineer</span></div>
+                            <div class="detail-row"><span class="label">Annual Income:</span><span class="value" data-profile-field="income">₹6 LPA</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Details Card -->
+                    <div class="info-card-mini">
+                        <h4><i class="fas fa-address-card"></i> Contact Information</h4>
+                        <div class="details-list">
+                            <div class="detail-row"><span class="label">Email:</span><span class="value" data-profile-field="email">suraj@example.com</span></div>
+                            <div class="detail-row"><span class="label">Mobile:</span><span class="value" data-profile-field="mobile">+91 98765 43210</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dashboard-section ai-promo-section">
+                <div class="ai-promo-card">
+                    <div class="ai-promo-content">
+                        <span class="ai-badge-gold">🤖 AI MATCH ENGINE</span>
+                        <h3>Find Your Perfect Match with AI</h3>
+                        <p>Our intelligent matching engine analyses your profile, lifestyle, education, career, and preferences to scan 12,486 profiles and calculate precise compatibility scores.</p>
+                        <a href="ai-matches.html" class="custom-btn"><i class="fas fa-robot me-2"></i>Start AI Analysis</a>
+                    </div>
+                    <div class="ai-promo-animation">
+                        <div class="brain-circle"><i class="fas fa-brain"></i></div>
+                        <div class="pulse-ring pr-1"></div>
+                        <div class="pulse-ring pr-2"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dashboard-section">
+                <div class="section-title">
+                    <h2>Recommended Matches</h2>
+                    <a href="profiles.html">View All</a>
+                </div>
+                <div class="match-grid">
+                    <div class="match-card">
+                        <img src="./src/images/girl4.png" alt="Profile">
+                        <div class="match-info">
+                            <h3>Priya R</h3>
+                            <p>24 Years | 5'4"</p>
+                            <p>BE Computer Science</p>
+                            <p>Software Engineer</p>
+                            <p>Madurai</p>
+                        </div>
+                        <div class="match-buttons">
+                            <button type="button" class="primary-btn">View Profile</button>
+                            <button type="button" class="outline-btn">Send Interest</button>
+                        </div>
+                    </div>
+
+                    <div class="match-card">
+                        <img src="./src/images/girl2.png" alt="Profile">
+                        <div class="match-info">
+                            <h3>Keerthana S</h3>
+                            <p>25 Years | 5'5"</p>
+                            <p>MCA</p>
+                            <p>Developer</p>
+                            <p>Chennai</p>
+                        </div>
+                        <div class="match-buttons">
+                            <button type="button" class="primary-btn">View Profile</button>
+                            <button type="button" class="outline-btn">Send Interest</button>
+                        </div>
+                    </div>
+
+                    <div class="match-card">
+                        <img src="./src/images/girl1.jpg" alt="Profile">
+                        <div class="match-info">
+                            <h3>Divya K</h3>
+                            <p>23 Years | 5'3"</p>
+                            <p>B.Tech IT</p>
+                            <p>QA Engineer</p>
+                            <p>Coimbatore</p>
+                        </div>
+                        <div class="match-buttons">
+                            <button type="button" class="primary-btn">View Profile</button>
+                            <button type="button" class="outline-btn">Send Interest</button>
+                        </div>
+                    </div>
+
+                    <div class="match-card">
+                        <img src="./src/images/girl4.png" alt="Profile">
+                        <div class="match-info">
+                            <h3>Ananya M</h3>
+                            <p>26 Years | 5'6"</p>
+                            <p>MBA</p>
+                            <p>Business Analyst</p>
+                            <p>Trichy</p>
+                        </div>
+                        <div class="match-buttons">
+                            <button type="button" class="primary-btn">View Profile</button>
+                            <button type="button" class="outline-btn">Send Interest</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dashboard-section">
+                <div class="section-title">
+                    <h2>Recent Activity</h2>
+                    <a href="notifications.html">View All</a>
+                </div>
+                <div class="activity-horizontal">
+                    <div class="activity-box">
+                        <div class="activity-icon view"><i class="fas fa-eye"></i></div>
+                        <div class="activity-text">
+                            <h5>Profile Viewed</h5>
+                            <p>Priya R visited your profile</p>
+                            <span>5 mins ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-box">
+                        <div class="activity-icon interest"><i class="fas fa-heart"></i></div>
+                        <div class="activity-text">
+                            <h5>Interest Received</h5>
+                            <p>Keerthana S sent interest</p>
+                            <span>22 mins ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-box">
+                        <div class="activity-icon message"><i class="fas fa-envelope"></i></div>
+                        <div class="activity-text">
+                            <h5>New Message</h5>
+                            <p>You received a new message</p>
+                            <span>1 hour ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-box">
+                        <div class="activity-icon shortlist"><i class="fas fa-star"></i></div>
+                        <div class="activity-text">
+                            <h5>Shortlisted</h5>
+                            <p>Your profile was shortlisted</p>
+                            <span>Yesterday</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dashboard-section">
+                <div class="section-title">
+                    <h2>Quick Actions</h2>
+                </div>
+                <div class="quick-grid">
+                    <div class="quick-card"><i class="fa-solid fa-user-pen"></i><h3>Edit Profile</h3></div>
+                    <div class="quick-card"><i class="fa-solid fa-images"></i><h3>Upload Photos</h3></div>
+                    <div class="quick-card"><i class="fa-solid fa-heart"></i><h3>Partner Preference</h3></div>
+                    <div class="quick-card"><i class="fa-solid fa-magnifying-glass"></i><h3>Find Matches</h3></div>
+                    <div class="quick-card"><i class="fa-solid fa-envelope"></i><h3>Inbox</h3></div>
+                    <div class="quick-card"><i class="fa-solid fa-gear"></i><h3>Settings</h3></div>
+                </div>
+            </section>
+
+            <section class="premium-card">
+                <div class="premium-left">
+                    <h2>Upgrade to Premium</h2>
+                    <p>Unlock unlimited messaging, priority visibility, contact details, advanced filters and premium customer support.</p>
+                </div>
+                <div class="premium-right">
+                    <button type="button" class="premium-btn">Upgrade Now</button>
+                </div>
+            </section>
+
+            <section class="dashboard-section">
+                <div class="section-title">
+                    <h2>Profile Insights</h2>
+                </div>
+                <div class="insight-grid">
+                    <div class="insight-card"><h1>92%</h1><p>Compatibility Score</p></div>
+                    <div class="insight-card"><h1>15</h1><p>Suggested Matches</p></div>
+                    <div class="insight-card"><h1>245</h1><p>Total Visitors</p></div>
+                    <div class="insight-card"><h1>98%</h1><p>Profile Quality</p></div>
+                </div>
+            </section>
+
+        </main>
+    </section>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/user-layout.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>
