@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
   portalHeader.innerHTML =
     '<div class="portal-header-container">' +
       '<div class="portal-header-left">' +
-        // '<button type="button" class="portal-sidebar-toggle-btn d-lg-none" id="portalSidebarToggle" aria-label="Toggle menu">' +
-//     '<i class="fas fa-bars"></i>' +
-// '</button>' +
+        '<button type="button" class="portal-sidebar-toggle-btn d-lg-none" id="portalSidebarToggle" aria-label="Toggle menu">' +
+          '<i class="fas fa-bars"></i>' +
+        '</button>' +
         '<a href="dashboard.html" class="portal-brand">' +
           '<img src="./src/images/kalyana-varan-logo.svg" alt="Kalyana Varan Logo">' +
         '</a>' +

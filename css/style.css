@@ -391,3 +391,12 @@ input,
         font-size:18px;
     }
 }
+
+/* Hide mobile toggle buttons on desktop screens */
+@media (min-width: 993px) {
+    .portal-sidebar-toggle-btn,
+    .sidebar-close,
+    .d-lg-none {
+        display: none !important;
+    }
+}
