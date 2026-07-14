@@ -1773,3 +1773,57 @@ body.sidebar-open::before{
     margin-right: 0 !important;
 }
 
+/* 2-Column Mobile Layout Optimizations for Dashboard Cards */
+@media (max-width: 767.98px) {
+  .match-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+  }
+  .match-card img {
+    height: 140px !important;
+  }
+  .match-info {
+    padding: 10px !important;
+  }
+  .match-info h3 {
+    font-size: 13.5px !important;
+    margin-bottom: 4px !important;
+  }
+  .match-info p {
+    font-size: 11px !important;
+    margin: 2px 0 !important;
+  }
+  .match-buttons {
+    padding: 10px !important;
+    gap: 6px !important;
+  }
+  .match-buttons button {
+    padding: 6px !important;
+    font-size: 11px !important;
+  }
+  .quick-grid,
+  .insight-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+  .quick-card {
+    padding: 15px 10px !important;
+  }
+  .quick-card i {
+    font-size: 22px !important;
+    margin-bottom: 8px !important;
+  }
+  .quick-card h3 {
+    font-size: 12.5px !important;
+  }
+  .insight-card {
+    padding: 15px 10px !important;
+  }
+  .insight-card h1 {
+    font-size: 20px !important;
+  }
+  .insight-card p {
+    font-size: 11px !important;
+  }
+}
+

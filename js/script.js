@@ -108,7 +108,7 @@ function renderProfiles(list) {
             : '<div class="profile-badge-verified"><i class="fas fa-check-circle me-1"></i>Verified</div>';
 
         var card = document.createElement("div");
-        card.className = "col-xl-4 col-md-6 mb-4";
+        card.className = "col-xl-4 col-md-6 col-6 mb-4";
         card.setAttribute("data-aos", "zoom-in");
         card.innerHTML = '\
           <div class="card profile-card h-100 border-0 shadow-sm overflow-hidden ' + (isPremium ? 'premium-card-border' : '') + '">\

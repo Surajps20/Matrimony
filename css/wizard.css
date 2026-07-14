@@ -936,22 +936,42 @@ textarea.form-control{
 
     .profile-title{
 
-        font-size:22px;
+        font-size:19px;
 
     }
 
     .section-heading h3{
 
-        font-size:24px;
+        font-size:20px;
 
     }
 
     .block-title{
 
-        font-size:17px;
+        font-size:15px;
 
     }
 
+}
+
+@media (max-width: 767.98px) {
+    .wizard-container, .profile-card, .form-card {
+        padding: 20px 15px !important;
+        border-radius: 14px !important;
+    }
+    .section-heading h3 {
+        font-size: 20px !important;
+    }
+    .profile-title {
+        font-size: 20px !important;
+    }
+    .block-title {
+        font-size: 16px !important;
+    }
+    .form-control, .form-select {
+        height: 42px !important;
+        font-size: 13.5px !important;
+    }
 }
 
 @media (max-width: 576px) {
@@ -962,14 +982,14 @@ textarea.form-control{
         width: auto !important;
     }
     .step-number {
-        width: 38px !important;
-        height: 38px !important;
-        font-size: 13px !important;
+        width: 34px !important;
+        height: 34px !important;
+        font-size: 12px !important;
     }
     .step-menu {
-        margin-bottom: 30px !important;
+        margin-bottom: 20px !important;
     }
-    .profile-card {
-        padding: 20px 15px !important;
+    .profile-card, .wizard-card {
+        padding: 15px 12px !important;
     }
 }

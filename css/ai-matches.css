@@ -1243,3 +1243,37 @@ transform:scale(1);
 display:none;
 
 }
+
+/* 2-Column Mobile Layout Optimizations for AI Match Cards */
+@media (max-width: 767.98px) {
+  .ai-match-card {
+    padding: 12px !important;
+  }
+  .ai-match-card img {
+    height: 130px !important;
+  }
+  .ai-match-card h3 {
+    font-size: 13.5px !important;
+    margin: 8px 0 4px !important;
+  }
+  .ai-match-card p {
+    font-size: 11px !important;
+    margin: 2px 0 !important;
+  }
+  .match-percent {
+    padding: 3px 8px !important;
+    font-size: 10px !important;
+    top: 8px !important;
+    left: 8px !important;
+  }
+  .match-actions {
+    flex-direction: column !important;
+    gap: 6px !important;
+    margin-top: 10px !important;
+  }
+  .match-actions button {
+    padding: 6px !important;
+    font-size: 11px !important;
+    width: 100% !important;
+  }
+}

@@ -1170,3 +1170,32 @@ color:#777;
     margin:auto auto 25px;
 
 }
+
+/* Mobile Responsive Optimizations for Interests Page */
+@media (max-width: 767.98px) {
+    .filter-tabs {
+        flex-wrap: wrap !important;
+        gap: 8px !important;
+    }
+    .filter-btn {
+        padding: 8px 12px !important;
+        font-size: 12.5px !important;
+        flex: 1 1 calc(50% - 8px) !important;
+        text-align: center !important;
+    }
+    .interest-card {
+        padding: 15px !important;
+        border-radius: 14px !important;
+    }
+    .profile-image img {
+        width: 85px !important;
+        height: 85px !important;
+    }
+    .profile-header h3 {
+        font-size: 16px !important;
+    }
+    .interest-actions {
+        width: 100% !important;
+        margin-top: 15px !important;
+    }
+}
